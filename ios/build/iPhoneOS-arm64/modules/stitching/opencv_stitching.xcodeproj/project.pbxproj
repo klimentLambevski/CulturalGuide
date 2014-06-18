@@ -1,0 +1,929 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              5596555FDE654D71B2F7AD62 /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 4A152B85C2DB4BE3B634EF0A /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            B2AA40D7F8E24D4186DC35D5 /* CMake Rules */,
+                     );
+                     dependencies = (
+                            F50121629182422DADE27836 /* PBXTargetDependency */,
+                            91683AFE0F3543558A21181E /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              C66CEB0D5780435CAE9026CA /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 3380E03AD173426DA41CB07A /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            A98431524006477D8319EB32 /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+              F62D337E4E6340E296B7EF7A /* install */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = B7835844A20545D38CB1879B /* Build configuration list for PBXAggregateTarget "install" */;
+                     buildPhases = (
+                            9831BA8364764F1B869BCC29 /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            B2DBB2E429454FFAA2A0F8F7 /* PBXTargetDependency */,
+                     );
+                     name = install;
+                     productName = install;
+              };
+              E5322F27D6164A48A7EA3AE4 /* package */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 5B58504DFA854ABF902E53FA /* Build configuration list for PBXAggregateTarget "package" */;
+                     buildPhases = (
+                            F991D1B26A9A4F369B886AD1 /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            1C8BDEB512944F15A1FB27E5 /* PBXTargetDependency */,
+                     );
+                     name = package;
+                     productName = package;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+6641C4358F59466099CB5978 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/cvconfig.h */ = {isa = PBXBuildFile; fileRef = 642EBE6107574D9095F717F8 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/cvconfig.h */; settings = { COMPILER_FLAGS = ""; }; };
+13AEEBF5F57C4002ADA11C54 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching/opencl_kernels.cpp */ = {isa = PBXBuildFile; fileRef = CEE475B715984B988707A179 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching/opencl_kernels.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+CC82D3FCF8CE43D09ADA89EF /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching/opencl_kernels.cpp.rule */ = {isa = PBXBuildFile; fileRef = 4011FB6E54E2430D8956EC7F /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching/opencl_kernels.cpp.rule */; settings = { COMPILER_FLAGS = ""; }; };
+02B85A36ADCA4576AC0E5F39 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching/opencl_kernels.hpp */ = {isa = PBXBuildFile; fileRef = 95479F1C2ECC4EA09495F003 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching/opencl_kernels.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+8C7EA1B860F94E93A04F7230 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/opencv2/opencv_modules.hpp */ = {isa = PBXBuildFile; fileRef = 7FDEE9D2CFE743C79FEBE3BA /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/opencv2/opencv_modules.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+91288F75981C483298C8DD5C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 03FBFBE6F9D741BA9CD3CD24 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+068DBDACEB294E118671188F /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching.hpp */ = {isa = PBXBuildFile; fileRef = 0D9232FC71DD471D9BFACE1A /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+BE5B1A7C9C884F95BB60B78B /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/autocalib.hpp */ = {isa = PBXBuildFile; fileRef = A35FA943A4EB43DD9B30E46C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/autocalib.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+92A882DE0E254F069FD54117 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/blenders.hpp */ = {isa = PBXBuildFile; fileRef = 4A57139CCF62459FA619FB4C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/blenders.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+58DA5FB44F244BCC89D2CD51 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/camera.hpp */ = {isa = PBXBuildFile; fileRef = 31670370B01B490ABB6D154D /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/camera.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+98B2C93D748A42999D498DAF /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/exposure_compensate.hpp */ = {isa = PBXBuildFile; fileRef = F763E79C847A4F129178351A /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/exposure_compensate.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+43C4A7DDC0074A23B5BED5A7 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/matchers.hpp */ = {isa = PBXBuildFile; fileRef = 99D93D5AE2954D419F17927A /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/matchers.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+08CB5A19F09F40319F8A6DD5 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/motion_estimators.hpp */ = {isa = PBXBuildFile; fileRef = 6F5B187DCC4E435995C89495 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/motion_estimators.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+805F306AA22E420092F37D68 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/seam_finders.hpp */ = {isa = PBXBuildFile; fileRef = C94BC0A5884644879C35128F /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/seam_finders.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+3931EEE6BFC14D9B9F786522 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/util.hpp */ = {isa = PBXBuildFile; fileRef = 9CB749A57B784D52B92D0A30 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/util.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+48196A5DA0134D2595364EEE /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/util_inl.hpp */ = {isa = PBXBuildFile; fileRef = AC9F86A1EF2A4B3F9D2D0E05 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/util_inl.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+5A4360A43D16432082966930 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/warpers.hpp */ = {isa = PBXBuildFile; fileRef = 14E8B1E25298493C87B251A0 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/warpers.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+87C0F0D8DC3A4FC9B73E897B /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/warpers_inl.hpp */ = {isa = PBXBuildFile; fileRef = 5ACD9B6612FF4D97ACC39961 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/warpers_inl.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+282C8416FEAE4957883B1C4C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/warpers.hpp */ = {isa = PBXBuildFile; fileRef = 87321ABBFF4042869501549E /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/warpers.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+1F7F4BE5AB66498793CE7E02 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/autocalib.cpp */ = {isa = PBXBuildFile; fileRef = F305AC4B1C07405CB04F9A72 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/autocalib.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+68B84C56AA7949439C0FF120 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/blenders.cpp */ = {isa = PBXBuildFile; fileRef = A821ACAE1CEE4C8B85783790 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/blenders.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+1542C8743ABF495B86A0400D /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/camera.cpp */ = {isa = PBXBuildFile; fileRef = 960E82A71A9040998AE3365A /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/camera.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+C19251119B5E497A90E416B6 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/exposure_compensate.cpp */ = {isa = PBXBuildFile; fileRef = 2B36124F9CD64009BF53DEA2 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/exposure_compensate.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+226861FFD7F14DABA2E5B61C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/matchers.cpp */ = {isa = PBXBuildFile; fileRef = 435EDCF98FDA45BCB9F012C1 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/matchers.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+EAC89E13FCB6458B8403C89B /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/motion_estimators.cpp */ = {isa = PBXBuildFile; fileRef = CD109C2E5D844393813CA3C7 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/motion_estimators.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+8FD0137C2A81482894034F5A /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/opencl/multibandblend.cl */ = {isa = PBXBuildFile; fileRef = EF61AB291F154096BFC4C5A6 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/opencl/multibandblend.cl */; settings = { COMPILER_FLAGS = ""; }; };
+076BDBE7CB9346F8A8479E0C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/opencl/warpers.cl */ = {isa = PBXBuildFile; fileRef = F62E35945F92410592E27717 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/opencl/warpers.cl */; settings = { COMPILER_FLAGS = ""; }; };
+FEC4A797880B4996B45E6FEC /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/precomp.hpp */ = {isa = PBXBuildFile; fileRef = 549BE1ED5732464A9FBBD3D3 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/precomp.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+5E84F3D009E14B30A5BBFB15 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/seam_finders.cpp */ = {isa = PBXBuildFile; fileRef = 88E0D466E32648DF8FD22884 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/seam_finders.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+17E0BBD68D2C4D0297FB3F4E /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/stitcher.cpp */ = {isa = PBXBuildFile; fileRef = F6A53DB454434A6B8231245D /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/stitcher.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+E0CEEE176C3F49208141D467 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/util.cpp */ = {isa = PBXBuildFile; fileRef = 19300679492C47B898439C14 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/util.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+FD68BAB058084DAD8595DBED /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/warpers.cpp */ = {isa = PBXBuildFile; fileRef = D98CE07B0FC845DAB23DF1AE /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/warpers.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+              E148D7FBBDB54985AD55F96C /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              65E61093638D482499BD6893 /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              D360CB6346824EF3A3B28C52 /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              2EF4EDF05CA74D2184B81235 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = B329348A5FEB47E9954659BA /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 0D0F8D2E171248D1B4477B3B;
+                     remoteInfo = opencv_stitching;
+              };
+              459F6A9FCB17404B8D635E99 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = B329348A5FEB47E9954659BA /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = C66CEB0D5780435CAE9026CA;
+                     remoteInfo = ZERO_CHECK;
+              };
+              9617479AFCAA477A924A9CF8 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = B329348A5FEB47E9954659BA /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 5596555FDE654D71B2F7AD62;
+                     remoteInfo = ALL_BUILD;
+              };
+              888E32416B054A24843D5993 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = B329348A5FEB47E9954659BA /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = C66CEB0D5780435CAE9026CA;
+                     remoteInfo = ZERO_CHECK;
+              };
+              EC7ED68E125B43E4946E14DB /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = B329348A5FEB47E9954659BA /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 5596555FDE654D71B2F7AD62;
+                     remoteInfo = ALL_BUILD;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+03FBFBE6F9D741BA9CD3CD24 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+642EBE6107574D9095F717F8 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/cvconfig.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "cvconfig.h"; path = "../../../ios/build/iPhoneOS-arm64/cvconfig.h"; sourceTree = SOURCE_ROOT; };
+CEE475B715984B988707A179 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching/opencl_kernels.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "opencl_kernels.cpp"; path = "../../../ios/build/iPhoneOS-arm64/modules/stitching/opencl_kernels.cpp"; sourceTree = SOURCE_ROOT; };
+4011FB6E54E2430D8956EC7F /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching/opencl_kernels.cpp.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "opencl_kernels.cpp.rule"; path = "../../../ios/build/iPhoneOS-arm64/modules/stitching/opencl_kernels.cpp.rule"; sourceTree = SOURCE_ROOT; };
+95479F1C2ECC4EA09495F003 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching/opencl_kernels.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "opencl_kernels.hpp"; path = "../../../ios/build/iPhoneOS-arm64/modules/stitching/opencl_kernels.hpp"; sourceTree = SOURCE_ROOT; };
+7FDEE9D2CFE743C79FEBE3BA /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/opencv2/opencv_modules.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "opencv_modules.hpp"; path = "../../../ios/build/iPhoneOS-arm64/opencv2/opencv_modules.hpp"; sourceTree = SOURCE_ROOT; };
+0D9232FC71DD471D9BFACE1A /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "stitching.hpp"; path = "include/opencv2/stitching.hpp"; sourceTree = SOURCE_ROOT; };
+A35FA943A4EB43DD9B30E46C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/autocalib.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "autocalib.hpp"; path = "include/opencv2/stitching/detail/autocalib.hpp"; sourceTree = SOURCE_ROOT; };
+4A57139CCF62459FA619FB4C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/blenders.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "blenders.hpp"; path = "include/opencv2/stitching/detail/blenders.hpp"; sourceTree = SOURCE_ROOT; };
+31670370B01B490ABB6D154D /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/camera.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "camera.hpp"; path = "include/opencv2/stitching/detail/camera.hpp"; sourceTree = SOURCE_ROOT; };
+F763E79C847A4F129178351A /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/exposure_compensate.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "exposure_compensate.hpp"; path = "include/opencv2/stitching/detail/exposure_compensate.hpp"; sourceTree = SOURCE_ROOT; };
+99D93D5AE2954D419F17927A /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/matchers.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "matchers.hpp"; path = "include/opencv2/stitching/detail/matchers.hpp"; sourceTree = SOURCE_ROOT; };
+6F5B187DCC4E435995C89495 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/motion_estimators.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "motion_estimators.hpp"; path = "include/opencv2/stitching/detail/motion_estimators.hpp"; sourceTree = SOURCE_ROOT; };
+C94BC0A5884644879C35128F /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/seam_finders.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "seam_finders.hpp"; path = "include/opencv2/stitching/detail/seam_finders.hpp"; sourceTree = SOURCE_ROOT; };
+9CB749A57B784D52B92D0A30 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/util.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "util.hpp"; path = "include/opencv2/stitching/detail/util.hpp"; sourceTree = SOURCE_ROOT; };
+AC9F86A1EF2A4B3F9D2D0E05 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/util_inl.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "util_inl.hpp"; path = "include/opencv2/stitching/detail/util_inl.hpp"; sourceTree = SOURCE_ROOT; };
+14E8B1E25298493C87B251A0 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/warpers.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "warpers.hpp"; path = "include/opencv2/stitching/detail/warpers.hpp"; sourceTree = SOURCE_ROOT; };
+5ACD9B6612FF4D97ACC39961 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/warpers_inl.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "warpers_inl.hpp"; path = "include/opencv2/stitching/detail/warpers_inl.hpp"; sourceTree = SOURCE_ROOT; };
+87321ABBFF4042869501549E /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/warpers.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "warpers.hpp"; path = "include/opencv2/stitching/warpers.hpp"; sourceTree = SOURCE_ROOT; };
+F305AC4B1C07405CB04F9A72 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/autocalib.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "autocalib.cpp"; path = "src/autocalib.cpp"; sourceTree = SOURCE_ROOT; };
+A821ACAE1CEE4C8B85783790 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/blenders.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "blenders.cpp"; path = "src/blenders.cpp"; sourceTree = SOURCE_ROOT; };
+960E82A71A9040998AE3365A /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/camera.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "camera.cpp"; path = "src/camera.cpp"; sourceTree = SOURCE_ROOT; };
+2B36124F9CD64009BF53DEA2 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/exposure_compensate.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "exposure_compensate.cpp"; path = "src/exposure_compensate.cpp"; sourceTree = SOURCE_ROOT; };
+435EDCF98FDA45BCB9F012C1 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/matchers.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "matchers.cpp"; path = "src/matchers.cpp"; sourceTree = SOURCE_ROOT; };
+CD109C2E5D844393813CA3C7 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/motion_estimators.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "motion_estimators.cpp"; path = "src/motion_estimators.cpp"; sourceTree = SOURCE_ROOT; };
+EF61AB291F154096BFC4C5A6 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/opencl/multibandblend.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "multibandblend.cl"; path = "src/opencl/multibandblend.cl"; sourceTree = SOURCE_ROOT; };
+F62E35945F92410592E27717 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/opencl/warpers.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "warpers.cl"; path = "src/opencl/warpers.cl"; sourceTree = SOURCE_ROOT; };
+549BE1ED5732464A9FBBD3D3 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/precomp.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "precomp.hpp"; path = "src/precomp.hpp"; sourceTree = SOURCE_ROOT; };
+88E0D466E32648DF8FD22884 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/seam_finders.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "seam_finders.cpp"; path = "src/seam_finders.cpp"; sourceTree = SOURCE_ROOT; };
+F6A53DB454434A6B8231245D /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/stitcher.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "stitcher.cpp"; path = "src/stitcher.cpp"; sourceTree = SOURCE_ROOT; };
+19300679492C47B898439C14 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/util.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "util.cpp"; path = "src/util.cpp"; sourceTree = SOURCE_ROOT; };
+D98CE07B0FC845DAB23DF1AE /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/warpers.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "warpers.cpp"; path = "src/warpers.cpp"; sourceTree = SOURCE_ROOT; };
+987D99D938A249978F4C275B /* opencv_stitching */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "libopencv_stitching.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              47D98FAB4CDE4237BD8A4080  = {
+                     isa = PBXGroup;
+                     children = (
+                            752C9E86035B4978882EB536 /* Sources */,
+                            AF6F4089D0D44A8CA73730E7 /* Resources */,
+                            15896A6B68AE4696B50AFB21 /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              752C9E86035B4978882EB536 /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            BCEB6A9F93074FC8ACCE6907 /* ALL_BUILD */,
+                            8D0A2A57CEDB4F71B8DAB117 /* ZERO_CHECK */,
+                            C4F199702D2F47128915EC1D /* modules */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              AF6F4089D0D44A8CA73730E7 /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              BCEB6A9F93074FC8ACCE6907 /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            1AC40C6C520141A3BDFE73BE /* CMake Rules */,
+                            03FBFBE6F9D741BA9CD3CD24 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              1AC40C6C520141A3BDFE73BE /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              8D0A2A57CEDB4F71B8DAB117 /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            D30EAA29A78E4406B5D8F144 /* CMake Rules */,
+                            03FBFBE6F9D741BA9CD3CD24 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              D30EAA29A78E4406B5D8F144 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              C4F199702D2F47128915EC1D /* modules */ = {
+                     isa = PBXGroup;
+                     children = (
+                            9070E9433EDD41E585CB1203 /* opencv_stitching */,
+                     );
+                     name = modules;
+                     sourceTree = "<group>";
+              };
+              9070E9433EDD41E585CB1203 /* opencv_stitching */ = {
+                     isa = PBXGroup;
+                     children = (
+                            CE3DBE42565540D4A5E43B38 /* Include */,
+                            04D9925D4A724550B6A5998D /* Src */,
+                            5695899152EC4B6BA16314AB /* Header Files */,
+                            5DB33EC69E114CBAB0038BE3 /* CMake Rules */,
+                            03FBFBE6F9D741BA9CD3CD24 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/CMakeLists.txt */,
+                     );
+                     name = opencv_stitching;
+                     sourceTree = "<group>";
+              };
+              CE3DBE42565540D4A5E43B38 /* Include */ = {
+                     isa = PBXGroup;
+                     children = (
+                            9140B46960A042AFB83776C3 /* opencv2 */,
+                     );
+                     name = Include;
+                     sourceTree = "<group>";
+              };
+              9140B46960A042AFB83776C3 /* opencv2 */ = {
+                     isa = PBXGroup;
+                     children = (
+                            B74977D8A89A412D80C5F9EA /* stitching */,
+                            0D9232FC71DD471D9BFACE1A /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching.hpp */,
+                     );
+                     name = opencv2;
+                     sourceTree = "<group>";
+              };
+              B74977D8A89A412D80C5F9EA /* stitching */ = {
+                     isa = PBXGroup;
+                     children = (
+                            942B741E39284A188B38EB60 /* detail */,
+                            87321ABBFF4042869501549E /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/warpers.hpp */,
+                     );
+                     name = stitching;
+                     sourceTree = "<group>";
+              };
+              942B741E39284A188B38EB60 /* detail */ = {
+                     isa = PBXGroup;
+                     children = (
+                            A35FA943A4EB43DD9B30E46C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/autocalib.hpp */,
+                            4A57139CCF62459FA619FB4C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/blenders.hpp */,
+                            31670370B01B490ABB6D154D /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/camera.hpp */,
+                            F763E79C847A4F129178351A /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/exposure_compensate.hpp */,
+                            99D93D5AE2954D419F17927A /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/matchers.hpp */,
+                            6F5B187DCC4E435995C89495 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/motion_estimators.hpp */,
+                            C94BC0A5884644879C35128F /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/seam_finders.hpp */,
+                            9CB749A57B784D52B92D0A30 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/util.hpp */,
+                            AC9F86A1EF2A4B3F9D2D0E05 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/util_inl.hpp */,
+                            14E8B1E25298493C87B251A0 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/warpers.hpp */,
+                            5ACD9B6612FF4D97ACC39961 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include/opencv2/stitching/detail/warpers_inl.hpp */,
+                     );
+                     name = detail;
+                     sourceTree = "<group>";
+              };
+              04D9925D4A724550B6A5998D /* Src */ = {
+                     isa = PBXGroup;
+                     children = (
+                            C84953E9A3614FBCB0CB1CCE /* opencl */,
+                            F305AC4B1C07405CB04F9A72 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/autocalib.cpp */,
+                            A821ACAE1CEE4C8B85783790 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/blenders.cpp */,
+                            960E82A71A9040998AE3365A /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/camera.cpp */,
+                            2B36124F9CD64009BF53DEA2 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/exposure_compensate.cpp */,
+                            435EDCF98FDA45BCB9F012C1 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/matchers.cpp */,
+                            CD109C2E5D844393813CA3C7 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/motion_estimators.cpp */,
+                            549BE1ED5732464A9FBBD3D3 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/precomp.hpp */,
+                            88E0D466E32648DF8FD22884 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/seam_finders.cpp */,
+                            F6A53DB454434A6B8231245D /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/stitcher.cpp */,
+                            19300679492C47B898439C14 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/util.cpp */,
+                            D98CE07B0FC845DAB23DF1AE /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/warpers.cpp */,
+                     );
+                     name = Src;
+                     sourceTree = "<group>";
+              };
+              C84953E9A3614FBCB0CB1CCE /* opencl */ = {
+                     isa = PBXGroup;
+                     children = (
+                            32BBDD5E8394452DA203BAD1 /* kernels */,
+                     );
+                     name = opencl;
+                     sourceTree = "<group>";
+              };
+              32BBDD5E8394452DA203BAD1 /* kernels */ = {
+                     isa = PBXGroup;
+                     children = (
+                            CEAEFF0E433C4603AE3ED766 /* autogenerated */,
+                            EF61AB291F154096BFC4C5A6 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/opencl/multibandblend.cl */,
+                            F62E35945F92410592E27717 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/opencl/warpers.cl */,
+                     );
+                     name = kernels;
+                     sourceTree = "<group>";
+              };
+              CEAEFF0E433C4603AE3ED766 /* autogenerated */ = {
+                     isa = PBXGroup;
+                     children = (
+                            CEE475B715984B988707A179 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching/opencl_kernels.cpp */,
+                            95479F1C2ECC4EA09495F003 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching/opencl_kernels.hpp */,
+                     );
+                     name = autogenerated;
+                     sourceTree = "<group>";
+              };
+              5695899152EC4B6BA16314AB /* Header Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            642EBE6107574D9095F717F8 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/cvconfig.h */,
+                            7FDEE9D2CFE743C79FEBE3BA /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/opencv2/opencv_modules.hpp */,
+                     );
+                     name = "Header Files";
+                     sourceTree = "<group>";
+              };
+              5DB33EC69E114CBAB0038BE3 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                            4011FB6E54E2430D8956EC7F /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching/opencl_kernels.cpp.rule */,
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              15896A6B68AE4696B50AFB21 /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            987D99D938A249978F4C275B /* opencv_stitching */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+              0D0F8D2E171248D1B4477B3B /* opencv_stitching */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = 02D5064972934300944F6067 /* Build configuration list for PBXNativeTarget "opencv_stitching" */;
+                     buildPhases = (
+                            7973798BF0654595ADE3F7A0 /* CMake Rules */,
+                            3D391711D3E546179BEAAC05 /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            15D82F8AB03A4AE08A46DAE8 /* PBXTargetDependency */,
+                     );
+                     name = opencv_stitching;
+                     productName = opencv_stitching;
+                     productReference = 987D99D938A249978F4C275B /* opencv_stitching */;
+                     productType = "com.apple.product-type.library.static";
+              };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+              B329348A5FEB47E9954659BA /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = 328E62FECE1A4E268417582A /* Build configuration list for PBXProject  "opencv_stitching" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            65E61093638D482499BD6893 /* Debug */,
+                            D360CB6346824EF3A3B28C52 /* Release */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = 47D98FAB4CDE4237BD8A4080;
+                     projectDirPath = /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching;
+                     projectRoot = "";
+                     targets = (
+                            5596555FDE654D71B2F7AD62 /* ALL_BUILD */,
+                            C66CEB0D5780435CAE9026CA /* ZERO_CHECK */,
+                            F62D337E4E6340E296B7EF7A /* install */,
+                            0D0F8D2E171248D1B4477B3B /* opencv_stitching */,
+                            E5322F27D6164A48A7EA3AE4 /* package */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              49C98F01F0854619A0535BE1 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              B2AA40D7F8E24D4186DC35D5 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching -f /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              B0FC857116724CC9B21CA2A1 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              A98431524006477D8319EB32 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching -f /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              245F8256D1C74E03A1FF57B1 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              9831BA8364764F1B869BCC29 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching -f /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              7973798BF0654595ADE3F7A0 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching -f /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching/CMakeScripts/opencv_stitching_cmakeRulesBuildPhase.make$CONFIGURATION cmake_check_multiple_outputs all";
+                     showEnvVarsInLog = 0;
+              };
+              F2A8EB0F32B442A69707749C /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              F991D1B26A9A4F369B886AD1 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching -f /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+              3D391711D3E546179BEAAC05 /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            13AEEBF5F57C4002ADA11C54 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching/opencl_kernels.cpp */,
+                            1F7F4BE5AB66498793CE7E02 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/autocalib.cpp */,
+                            68B84C56AA7949439C0FF120 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/blenders.cpp */,
+                            1542C8743ABF495B86A0400D /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/camera.cpp */,
+                            C19251119B5E497A90E416B6 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/exposure_compensate.cpp */,
+                            226861FFD7F14DABA2E5B61C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/matchers.cpp */,
+                            EAC89E13FCB6458B8403C89B /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/motion_estimators.cpp */,
+                            5E84F3D009E14B30A5BBFB15 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/seam_finders.cpp */,
+                            17E0BBD68D2C4D0297FB3F4E /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/stitcher.cpp */,
+                            E0CEEE176C3F49208141D467 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/util.cpp */,
+                            FD68BAB058084DAD8595DBED /* /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src/warpers.cpp */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              F50121629182422DADE27836 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 0D0F8D2E171248D1B4477B3B /* opencv_stitching */;
+                     targetProxy = 2EF4EDF05CA74D2184B81235 /* PBXContainerItemProxy */;
+              };
+              91683AFE0F3543558A21181E /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = C66CEB0D5780435CAE9026CA /* ZERO_CHECK */;
+                     targetProxy = 459F6A9FCB17404B8D635E99 /* PBXContainerItemProxy */;
+              };
+              B2DBB2E429454FFAA2A0F8F7 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 5596555FDE654D71B2F7AD62 /* ALL_BUILD */;
+                     targetProxy = 9617479AFCAA477A924A9CF8 /* PBXContainerItemProxy */;
+              };
+              15D82F8AB03A4AE08A46DAE8 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = C66CEB0D5780435CAE9026CA /* ZERO_CHECK */;
+                     targetProxy = 888E32416B054A24843D5993 /* PBXContainerItemProxy */;
+              };
+              1C8BDEB512944F15A1FB27E5 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 5596555FDE654D71B2F7AD62 /* ALL_BUILD */;
+                     targetProxy = EC7ED68E125B43E4946E14DB /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              95B9DBA1ED6D42A08E5085EA /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching/build";
+                     };
+                     name = Debug;
+              };
+              AAD2BF6DB0EC4DF5AFE64BEC /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching/build";
+                     };
+                     name = Release;
+              };
+              4C018B04867944BA9ADF277A /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/objdetect/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/nonfree/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/ml/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/features2d/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/highgui/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/flann/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching", /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              9F6132FA420C44B5A1CDC5F9 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/objdetect/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/nonfree/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/ml/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/features2d/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/highgui/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/flann/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching", /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              E56A5F96FFA04AFF8E4C9ECA /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/objdetect/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/nonfree/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/ml/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/features2d/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/highgui/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/flann/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching", /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              B2DD67354E2C47DBA5CC0722 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/objdetect/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/nonfree/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/ml/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/features2d/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/highgui/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/flann/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching", /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              E6B40FC97113473ABF2E0569 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/objdetect/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/nonfree/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/ml/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/features2d/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/highgui/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/flann/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching", /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              9DCF594B093E472391DC0B26 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/objdetect/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/nonfree/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/ml/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/features2d/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/highgui/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/flann/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching", /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              7A2FCED10C1947ABB8883F97 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/lib/Debug";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", OPENCV_NOSTL, "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/objdetect/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/nonfree/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/ml/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/features2d/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/highgui/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/flann/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching", /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC           -DDEBUG -D_DEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "-stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC           -DDEBUG -D_DEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = opencv_stitching;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              61F3F225C65244A3B6AD3A83 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/lib/Release";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", OPENCV_NOSTL, "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/objdetect/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/nonfree/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/ml/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/features2d/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/highgui/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/flann/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching", /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC       -DNDEBUG  -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "-stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC   -DNDEBUG     -fomit-frame-pointer -ffast-math  -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = opencv_stitching;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              7EF12B66A5A644F8A1176573 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/objdetect/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/nonfree/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/ml/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/features2d/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/highgui/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/flann/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching", /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              1FBC3F46EE434A83833149A3 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/objdetect/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/nonfree/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/ml/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/features2d/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/highgui/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/flann/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching", /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/stitching/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/stitching";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              328E62FECE1A4E268417582A /* Build configuration list for PBXProject  "opencv_stitching" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            95B9DBA1ED6D42A08E5085EA /* Debug */,
+                            AAD2BF6DB0EC4DF5AFE64BEC /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              4A152B85C2DB4BE3B634EF0A /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            4C018B04867944BA9ADF277A /* Debug */,
+                            9F6132FA420C44B5A1CDC5F9 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              3380E03AD173426DA41CB07A /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            E56A5F96FFA04AFF8E4C9ECA /* Debug */,
+                            B2DD67354E2C47DBA5CC0722 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              B7835844A20545D38CB1879B /* Build configuration list for PBXAggregateTarget "install" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            E6B40FC97113473ABF2E0569 /* Debug */,
+                            9DCF594B093E472391DC0B26 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              02D5064972934300944F6067 /* Build configuration list for PBXNativeTarget "opencv_stitching" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            7A2FCED10C1947ABB8883F97 /* Debug */,
+                            61F3F225C65244A3B6AD3A83 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              5B58504DFA854ABF902E53FA /* Build configuration list for PBXAggregateTarget "package" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            7EF12B66A5A644F8A1176573 /* Debug */,
+                            1FBC3F46EE434A83833149A3 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = B329348A5FEB47E9954659BA;
+}

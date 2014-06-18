@@ -1,0 +1,807 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              5596555FDE654D71B2F7AD62 /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 4CC27A4614B94198A960C0A9 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            B7D6AA7FF5D243DB9DDDCEFF /* CMake Rules */,
+                     );
+                     dependencies = (
+                            A76C34697F2E4F7C859208A7 /* PBXTargetDependency */,
+                            7F6DAC22E2D7444EABB1B88D /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              C66CEB0D5780435CAE9026CA /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 7E560E325AB9480DB915E26E /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            4FE482C1BCC448CB89EC9736 /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+              F62D337E4E6340E296B7EF7A /* install */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 228239FE6E7144CEBE2C3924 /* Build configuration list for PBXAggregateTarget "install" */;
+                     buildPhases = (
+                            CE815B23C8BD4F528642D537 /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            87C99D100C0F40FD9EC0BF88 /* PBXTargetDependency */,
+                     );
+                     name = install;
+                     productName = install;
+              };
+              E5322F27D6164A48A7EA3AE4 /* package */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = B5DE3DC206A94DEF940A7BB1 /* Build configuration list for PBXAggregateTarget "package" */;
+                     buildPhases = (
+                            6F9E3766B6A84BD08294C406 /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            9B03D74DC9994FE795675F2E /* PBXTargetDependency */,
+                     );
+                     name = package;
+                     productName = package;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+5AC3A8BF98604A70BF9DF9BC /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/cvconfig.h */ = {isa = PBXBuildFile; fileRef = ABF591EEB6764D6A99023980 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/cvconfig.h */; settings = { COMPILER_FLAGS = ""; }; };
+2FB0919AE1DB48E18C7F7A64 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/opencv2/opencv_modules.hpp */ = {isa = PBXBuildFile; fileRef = EDCFB5F99E994CDC89F8FC1F /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/opencv2/opencv_modules.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+00D9752294D64D3092BF1C59 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = D600B1FA49224057A2941471 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+5C196580696A4E6186A6786F /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/include/opencv2/optim.hpp */ = {isa = PBXBuildFile; fileRef = BDD12CC640404CFFA0B54E67 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/include/opencv2/optim.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+90E0A23FB8F74FB3B39E7D73 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/include/opencv2/optim/optim.hpp */ = {isa = PBXBuildFile; fileRef = 89BDB6C05C754269A9FA7672 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/include/opencv2/optim/optim.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+C7E8C3EB9A2E4CE3A56B40FA /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src/conjugate_gradient.cpp */ = {isa = PBXBuildFile; fileRef = 7E217F1506994ADCA816DC3D /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src/conjugate_gradient.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+D166DD07E9FB4A608192BC1C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src/debug.hpp */ = {isa = PBXBuildFile; fileRef = AF0C6CB585F14FD984158007 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src/debug.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+0CD399DC03084A7BA92A0A18 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src/denoise_tvl1.cpp */ = {isa = PBXBuildFile; fileRef = 290D5F2C8971446FA65E8CB6 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src/denoise_tvl1.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+4493FA1047474F81A036B594 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src/lpsolver.cpp */ = {isa = PBXBuildFile; fileRef = C806FD0CEA6C409F8E57424B /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src/lpsolver.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+00F9D6CB29074AD1BDEDF310 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src/precomp.hpp */ = {isa = PBXBuildFile; fileRef = F34F291B39EF47CEA73C1F5F /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src/precomp.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+FD6930F0DF75450C9505A637 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src/simplex.cpp */ = {isa = PBXBuildFile; fileRef = 761A882EB12D4CDAB64733A5 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src/simplex.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+              64459000E6224849BBA97F31 /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              381E78963D6B4880B87C3D61 /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              93D76B137B1F4A4A9072F104 /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              138CEC5E576C4A108D0BD434 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 891E6FC529FD42BAB3CE8D74 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = C66CEB0D5780435CAE9026CA;
+                     remoteInfo = ZERO_CHECK;
+              };
+              843DF2FA90F34FADA302AD14 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 891E6FC529FD42BAB3CE8D74 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = E214BE274EDF4B8B866811E1;
+                     remoteInfo = opencv_optim;
+              };
+              CAE69F9A94984E6BA30308BD /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 891E6FC529FD42BAB3CE8D74 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 5596555FDE654D71B2F7AD62;
+                     remoteInfo = ALL_BUILD;
+              };
+              8CA2EDBD60DE4A509CF1C0E4 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 891E6FC529FD42BAB3CE8D74 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = C66CEB0D5780435CAE9026CA;
+                     remoteInfo = ZERO_CHECK;
+              };
+              AD1FDFC73ADD4A5BB3ED7722 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 891E6FC529FD42BAB3CE8D74 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 5596555FDE654D71B2F7AD62;
+                     remoteInfo = ALL_BUILD;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+D600B1FA49224057A2941471 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+ABF591EEB6764D6A99023980 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/cvconfig.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "cvconfig.h"; path = "../../../ios/build/iPhoneOS-arm64/cvconfig.h"; sourceTree = SOURCE_ROOT; };
+EDCFB5F99E994CDC89F8FC1F /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/opencv2/opencv_modules.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "opencv_modules.hpp"; path = "../../../ios/build/iPhoneOS-arm64/opencv2/opencv_modules.hpp"; sourceTree = SOURCE_ROOT; };
+BDD12CC640404CFFA0B54E67 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/include/opencv2/optim.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "optim.hpp"; path = "include/opencv2/optim.hpp"; sourceTree = SOURCE_ROOT; };
+89BDB6C05C754269A9FA7672 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/include/opencv2/optim/optim.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "optim.hpp"; path = "include/opencv2/optim/optim.hpp"; sourceTree = SOURCE_ROOT; };
+7E217F1506994ADCA816DC3D /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src/conjugate_gradient.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "conjugate_gradient.cpp"; path = "src/conjugate_gradient.cpp"; sourceTree = SOURCE_ROOT; };
+AF0C6CB585F14FD984158007 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src/debug.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "debug.hpp"; path = "src/debug.hpp"; sourceTree = SOURCE_ROOT; };
+290D5F2C8971446FA65E8CB6 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src/denoise_tvl1.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "denoise_tvl1.cpp"; path = "src/denoise_tvl1.cpp"; sourceTree = SOURCE_ROOT; };
+C806FD0CEA6C409F8E57424B /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src/lpsolver.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "lpsolver.cpp"; path = "src/lpsolver.cpp"; sourceTree = SOURCE_ROOT; };
+F34F291B39EF47CEA73C1F5F /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src/precomp.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "precomp.hpp"; path = "src/precomp.hpp"; sourceTree = SOURCE_ROOT; };
+761A882EB12D4CDAB64733A5 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src/simplex.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "simplex.cpp"; path = "src/simplex.cpp"; sourceTree = SOURCE_ROOT; };
+3A4FB5047B2C45BF809FB062 /* opencv_optim */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "libopencv_optim.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              968258FB90744BFB9A916554  = {
+                     isa = PBXGroup;
+                     children = (
+                            7EF94AAE49D94DF0A85BDCE6 /* Sources */,
+                            197459A8B8B14B56A3D6B934 /* Resources */,
+                            18A6D258A63341279D79C3FF /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              7EF94AAE49D94DF0A85BDCE6 /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            41BCC3D5146747358B06E077 /* ALL_BUILD */,
+                            331666D8607E4E539393C96C /* ZERO_CHECK */,
+                            4044E2EB09504E7FB428B26B /* modules */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              197459A8B8B14B56A3D6B934 /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              41BCC3D5146747358B06E077 /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            B46A69E403164C58A3674508 /* CMake Rules */,
+                            D600B1FA49224057A2941471 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              B46A69E403164C58A3674508 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              331666D8607E4E539393C96C /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            803ACC2126B74EDF835F0743 /* CMake Rules */,
+                            D600B1FA49224057A2941471 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              803ACC2126B74EDF835F0743 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              4044E2EB09504E7FB428B26B /* modules */ = {
+                     isa = PBXGroup;
+                     children = (
+                            278F700E1D054E08B1A03B9B /* opencv_optim */,
+                     );
+                     name = modules;
+                     sourceTree = "<group>";
+              };
+              278F700E1D054E08B1A03B9B /* opencv_optim */ = {
+                     isa = PBXGroup;
+                     children = (
+                            B475D74DCDA2497CB8888300 /* Include */,
+                            2A948C971AA245B59D41CFA5 /* Src */,
+                            D79D5E0F3DF84DD597B996CE /* Header Files */,
+                            D600B1FA49224057A2941471 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/CMakeLists.txt */,
+                     );
+                     name = opencv_optim;
+                     sourceTree = "<group>";
+              };
+              B475D74DCDA2497CB8888300 /* Include */ = {
+                     isa = PBXGroup;
+                     children = (
+                            2770A0D019654F3FBDD8990A /* opencv2 */,
+                     );
+                     name = Include;
+                     sourceTree = "<group>";
+              };
+              2770A0D019654F3FBDD8990A /* opencv2 */ = {
+                     isa = PBXGroup;
+                     children = (
+                            5FE92E6257F74832ACA53107 /* optim */,
+                            BDD12CC640404CFFA0B54E67 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/include/opencv2/optim.hpp */,
+                     );
+                     name = opencv2;
+                     sourceTree = "<group>";
+              };
+              5FE92E6257F74832ACA53107 /* optim */ = {
+                     isa = PBXGroup;
+                     children = (
+                            89BDB6C05C754269A9FA7672 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/include/opencv2/optim/optim.hpp */,
+                     );
+                     name = optim;
+                     sourceTree = "<group>";
+              };
+              2A948C971AA245B59D41CFA5 /* Src */ = {
+                     isa = PBXGroup;
+                     children = (
+                            7E217F1506994ADCA816DC3D /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src/conjugate_gradient.cpp */,
+                            AF0C6CB585F14FD984158007 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src/debug.hpp */,
+                            290D5F2C8971446FA65E8CB6 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src/denoise_tvl1.cpp */,
+                            C806FD0CEA6C409F8E57424B /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src/lpsolver.cpp */,
+                            F34F291B39EF47CEA73C1F5F /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src/precomp.hpp */,
+                            761A882EB12D4CDAB64733A5 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src/simplex.cpp */,
+                     );
+                     name = Src;
+                     sourceTree = "<group>";
+              };
+              D79D5E0F3DF84DD597B996CE /* Header Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            ABF591EEB6764D6A99023980 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/cvconfig.h */,
+                            EDCFB5F99E994CDC89F8FC1F /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/opencv2/opencv_modules.hpp */,
+                     );
+                     name = "Header Files";
+                     sourceTree = "<group>";
+              };
+              18A6D258A63341279D79C3FF /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            3A4FB5047B2C45BF809FB062 /* opencv_optim */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+              E214BE274EDF4B8B866811E1 /* opencv_optim */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = 598D8880FB29480AA9FB73C6 /* Build configuration list for PBXNativeTarget "opencv_optim" */;
+                     buildPhases = (
+                            E8E39937FF9B40ADBFF39323 /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            65ED419D24B845E8A29A0C87 /* PBXTargetDependency */,
+                     );
+                     name = opencv_optim;
+                     productName = opencv_optim;
+                     productReference = 3A4FB5047B2C45BF809FB062 /* opencv_optim */;
+                     productType = "com.apple.product-type.library.static";
+              };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+              891E6FC529FD42BAB3CE8D74 /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = F775B36DC9E242748EFE52A9 /* Build configuration list for PBXProject  "opencv_optim" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            381E78963D6B4880B87C3D61 /* Debug */,
+                            93D76B137B1F4A4A9072F104 /* Release */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = 968258FB90744BFB9A916554;
+                     projectDirPath = /Users/kliment/Documents/CulturalGuide/opencv/modules/optim;
+                     projectRoot = "";
+                     targets = (
+                            5596555FDE654D71B2F7AD62 /* ALL_BUILD */,
+                            C66CEB0D5780435CAE9026CA /* ZERO_CHECK */,
+                            F62D337E4E6340E296B7EF7A /* install */,
+                            E214BE274EDF4B8B866811E1 /* opencv_optim */,
+                            E5322F27D6164A48A7EA3AE4 /* package */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              7B9DFB307D2842249EE9A26C /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              B7D6AA7FF5D243DB9DDDCEFF /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/optim -f /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/optim/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              509EB0F4D78447A994BFC838 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              4FE482C1BCC448CB89EC9736 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/optim -f /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/optim/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              21B7D8FDBC774D50933D3B89 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              CE815B23C8BD4F528642D537 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/optim -f /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/optim/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              CEF6BAC36EB14F94ADDE3975 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              6F9E3766B6A84BD08294C406 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/optim -f /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/optim/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+              E8E39937FF9B40ADBFF39323 /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            C7E8C3EB9A2E4CE3A56B40FA /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src/conjugate_gradient.cpp */,
+                            0CD399DC03084A7BA92A0A18 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src/denoise_tvl1.cpp */,
+                            4493FA1047474F81A036B594 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src/lpsolver.cpp */,
+                            FD6930F0DF75450C9505A637 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src/simplex.cpp */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              A76C34697F2E4F7C859208A7 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = C66CEB0D5780435CAE9026CA /* ZERO_CHECK */;
+                     targetProxy = 138CEC5E576C4A108D0BD434 /* PBXContainerItemProxy */;
+              };
+              7F6DAC22E2D7444EABB1B88D /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = E214BE274EDF4B8B866811E1 /* opencv_optim */;
+                     targetProxy = 843DF2FA90F34FADA302AD14 /* PBXContainerItemProxy */;
+              };
+              87C99D100C0F40FD9EC0BF88 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 5596555FDE654D71B2F7AD62 /* ALL_BUILD */;
+                     targetProxy = CAE69F9A94984E6BA30308BD /* PBXContainerItemProxy */;
+              };
+              65ED419D24B845E8A29A0C87 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = C66CEB0D5780435CAE9026CA /* ZERO_CHECK */;
+                     targetProxy = 8CA2EDBD60DE4A509CF1C0E4 /* PBXContainerItemProxy */;
+              };
+              9B03D74DC9994FE795675F2E /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 5596555FDE654D71B2F7AD62 /* ALL_BUILD */;
+                     targetProxy = AD1FDFC73ADD4A5BB3ED7722 /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              BE11C6E580C44BE0B68B86EB /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/optim/build";
+                     };
+                     name = Debug;
+              };
+              0A40791E521A431CB3BD2576 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/optim/build";
+                     };
+                     name = Release;
+              };
+              E04BF7CA213C47F0962A0E4F /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/optim", /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/optim";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              519082C9B038472E9E5756B7 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/optim", /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/optim";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              0C76CD79885C4B5ABA0F7114 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/optim", /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/optim";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              3F83A505C0C54A19B95B9EB1 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/optim", /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/optim";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              AAFAB04C451E4100898D7D6C /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/optim", /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/optim";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              18C16F2F1AF24BA6A43D01A5 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/optim", /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/optim";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              1E483BB1BE2944E1BAB42070 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/lib/Debug";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", OPENCV_NOSTL, "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/optim", /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC           -DDEBUG -D_DEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "-stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC           -DDEBUG -D_DEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = opencv_optim;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/optim";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              8AD0FE08D3BE43C19E65AD08 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/lib/Release";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", OPENCV_NOSTL, "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/optim", /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC       -DNDEBUG  -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "-stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC   -DNDEBUG     -fomit-frame-pointer -ffast-math  -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = opencv_optim;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/optim";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              ED50B6666B2F4D5F9DB68F99 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/optim", /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/optim";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              E6618C5520924CCAB5FA69B4 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/optim", /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/optim/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-arm64/modules/optim";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              F775B36DC9E242748EFE52A9 /* Build configuration list for PBXProject  "opencv_optim" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            BE11C6E580C44BE0B68B86EB /* Debug */,
+                            0A40791E521A431CB3BD2576 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              4CC27A4614B94198A960C0A9 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            E04BF7CA213C47F0962A0E4F /* Debug */,
+                            519082C9B038472E9E5756B7 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              7E560E325AB9480DB915E26E /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            0C76CD79885C4B5ABA0F7114 /* Debug */,
+                            3F83A505C0C54A19B95B9EB1 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              228239FE6E7144CEBE2C3924 /* Build configuration list for PBXAggregateTarget "install" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            AAFAB04C451E4100898D7D6C /* Debug */,
+                            18C16F2F1AF24BA6A43D01A5 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              598D8880FB29480AA9FB73C6 /* Build configuration list for PBXNativeTarget "opencv_optim" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            1E483BB1BE2944E1BAB42070 /* Debug */,
+                            8AD0FE08D3BE43C19E65AD08 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              B5DE3DC206A94DEF940A7BB1 /* Build configuration list for PBXAggregateTarget "package" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            ED50B6666B2F4D5F9DB68F99 /* Debug */,
+                            E6618C5520924CCAB5FA69B4 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = 891E6FC529FD42BAB3CE8D74;
+}

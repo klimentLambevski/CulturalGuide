@@ -1,0 +1,806 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              FA3A8C0A26B14E97B0F88C88 /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 55C930E60E334E3B8797FDD2 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            655568FC9D8B431FBE8837F9 /* CMake Rules */,
+                     );
+                     dependencies = (
+                            3EB5D63842004FD78131D1F7 /* PBXTargetDependency */,
+                            2F7E26E5394D4FA6B4CC800D /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              A79B86F0609B4B1B98C7053A /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = B754A397CA9A43318F889BA4 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            AA087ACC275F429E80177985 /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+              8EAAC43563904E37BB91E765 /* install */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 0935CDFC3AE047C280D29F74 /* Build configuration list for PBXAggregateTarget "install" */;
+                     buildPhases = (
+                            738F0011F9814B6A983FCC62 /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            4D3E5180F0404EE2892DFAB9 /* PBXTargetDependency */,
+                     );
+                     name = install;
+                     productName = install;
+              };
+              67F045D32BCC458EBF8813EB /* package */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = A27F8285BAF041D1869A867E /* Build configuration list for PBXAggregateTarget "package" */;
+                     buildPhases = (
+                            44134DC2957D488BB30EB566 /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            E5FEA54B363C4FB688565C49 /* PBXTargetDependency */,
+                     );
+                     name = package;
+                     productName = package;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+2D0A1A868419409193560788 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/cvconfig.h */ = {isa = PBXBuildFile; fileRef = 50F8149ECA8744ECB4C4222F /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/cvconfig.h */; settings = { COMPILER_FLAGS = ""; }; };
+D226A81E6C2941BF89B5769F /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/opencv2/opencv_modules.hpp */ = {isa = PBXBuildFile; fileRef = 2D11C98233984FD399EA6302 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/opencv2/opencv_modules.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+E4C7AA5E1E514D0EA15EF830 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = AE45CC10592E407AB1CBF211 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+E0C35A04E85C413F8F6CCE24 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/include/opencv2/softcascade.hpp */ = {isa = PBXBuildFile; fileRef = A6B072A543D6410A8F44C36F /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/include/opencv2/softcascade.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+5F8F50693398405BB0F982D3 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/cuda/channels.cu */ = {isa = PBXBuildFile; fileRef = FCB81361CB96432487DD15A2 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/cuda/channels.cu */; settings = { COMPILER_FLAGS = ""; }; };
+CB2412F735114AB79A761C11 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/cuda/icf-sc.cu */ = {isa = PBXBuildFile; fileRef = D2C4CF124CC944BF8379B627 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/cuda/icf-sc.cu */; settings = { COMPILER_FLAGS = ""; }; };
+576D5DDBC8CB493FB6DDA881 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/cuda_invoker.hpp */ = {isa = PBXBuildFile; fileRef = FC4F11C3D3BD4016A645D995 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/cuda_invoker.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+CABABFACCFCF4271891EF03B /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/detector.cpp */ = {isa = PBXBuildFile; fileRef = A43A496D8E9E4B30B37BF819 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/detector.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+A84356B86A1F4FF29F83D4A8 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/detector_cuda.cpp */ = {isa = PBXBuildFile; fileRef = 223757FDF6544D11B1C844F4 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/detector_cuda.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+5E25428917B847E181803AC5 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/integral_channel_builder.cpp */ = {isa = PBXBuildFile; fileRef = D190F7DAFD40429C9D32D442 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/integral_channel_builder.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+A5AAE003A3954EB7A87AC3F5 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/octave.cpp */ = {isa = PBXBuildFile; fileRef = 2AAEAE69222D4A37BF5DAE5E /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/octave.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+DCB5A1FF19AB41539FEE705D /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/precomp.hpp */ = {isa = PBXBuildFile; fileRef = 5EBCE5FF25FE4E81B8DA319C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/precomp.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+EDD4A8D12DC44CB781B21DDB /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/softcascade_init.cpp */ = {isa = PBXBuildFile; fileRef = B3D3F95FE9304C088C8C9B29 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/softcascade_init.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+              D34339D6A00B487C9AA44397 /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              AEB2E75E866D4DE4BD524C56 /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              6DB429439A2F46D9BB5146B4 /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              142454CC0E9446DAA5FC7434 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 1168029544D24D488FB2D703 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 5E632F38F9744C4392DF4CAA;
+                     remoteInfo = opencv_softcascade;
+              };
+              BE775D5D3EE04A7C9BDE46B6 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 1168029544D24D488FB2D703 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = A79B86F0609B4B1B98C7053A;
+                     remoteInfo = ZERO_CHECK;
+              };
+              DF6C16B4DD2A4EEB832B100C /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 1168029544D24D488FB2D703 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = FA3A8C0A26B14E97B0F88C88;
+                     remoteInfo = ALL_BUILD;
+              };
+              0291833E847246A285831752 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 1168029544D24D488FB2D703 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = A79B86F0609B4B1B98C7053A;
+                     remoteInfo = ZERO_CHECK;
+              };
+              3FD2A6D0ECAF4CBEA4B2F0F3 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 1168029544D24D488FB2D703 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = FA3A8C0A26B14E97B0F88C88;
+                     remoteInfo = ALL_BUILD;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+AE45CC10592E407AB1CBF211 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+50F8149ECA8744ECB4C4222F /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/cvconfig.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "cvconfig.h"; path = "../../../ios/build/iPhoneSimulator-x86_64/cvconfig.h"; sourceTree = SOURCE_ROOT; };
+2D11C98233984FD399EA6302 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/opencv2/opencv_modules.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "opencv_modules.hpp"; path = "../../../ios/build/iPhoneSimulator-x86_64/opencv2/opencv_modules.hpp"; sourceTree = SOURCE_ROOT; };
+A6B072A543D6410A8F44C36F /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/include/opencv2/softcascade.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "softcascade.hpp"; path = "include/opencv2/softcascade.hpp"; sourceTree = SOURCE_ROOT; };
+FCB81361CB96432487DD15A2 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/cuda/channels.cu */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "channels.cu"; path = "src/cuda/channels.cu"; sourceTree = SOURCE_ROOT; };
+D2C4CF124CC944BF8379B627 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/cuda/icf-sc.cu */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "icf-sc.cu"; path = "src/cuda/icf-sc.cu"; sourceTree = SOURCE_ROOT; };
+FC4F11C3D3BD4016A645D995 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/cuda_invoker.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "cuda_invoker.hpp"; path = "src/cuda_invoker.hpp"; sourceTree = SOURCE_ROOT; };
+A43A496D8E9E4B30B37BF819 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/detector.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "detector.cpp"; path = "src/detector.cpp"; sourceTree = SOURCE_ROOT; };
+223757FDF6544D11B1C844F4 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/detector_cuda.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "detector_cuda.cpp"; path = "src/detector_cuda.cpp"; sourceTree = SOURCE_ROOT; };
+D190F7DAFD40429C9D32D442 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/integral_channel_builder.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "integral_channel_builder.cpp"; path = "src/integral_channel_builder.cpp"; sourceTree = SOURCE_ROOT; };
+2AAEAE69222D4A37BF5DAE5E /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/octave.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "octave.cpp"; path = "src/octave.cpp"; sourceTree = SOURCE_ROOT; };
+5EBCE5FF25FE4E81B8DA319C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/precomp.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "precomp.hpp"; path = "src/precomp.hpp"; sourceTree = SOURCE_ROOT; };
+B3D3F95FE9304C088C8C9B29 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/softcascade_init.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "softcascade_init.cpp"; path = "src/softcascade_init.cpp"; sourceTree = SOURCE_ROOT; };
+BD19913F747C430E98D6FAE6 /* opencv_softcascade */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "libopencv_softcascade.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              F52E2B3235C342AE889DF7B3  = {
+                     isa = PBXGroup;
+                     children = (
+                            53272E84CB36410AB888D28D /* Sources */,
+                            224B14044638479F83D0EB58 /* Resources */,
+                            498DE38ABCB3443FA6C30AD6 /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              53272E84CB36410AB888D28D /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            598497EBBAF34EE8AD3629A0 /* ALL_BUILD */,
+                            3B50ED3FC34B4A1E9FB44D32 /* ZERO_CHECK */,
+                            333F8C9B2D8B4009B1FC2500 /* modules */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              224B14044638479F83D0EB58 /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              598497EBBAF34EE8AD3629A0 /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            DCF36245BDA341EBACFD5065 /* CMake Rules */,
+                            AE45CC10592E407AB1CBF211 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              DCF36245BDA341EBACFD5065 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              3B50ED3FC34B4A1E9FB44D32 /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            949691C35E654DE6B8ABF349 /* CMake Rules */,
+                            AE45CC10592E407AB1CBF211 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              949691C35E654DE6B8ABF349 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              333F8C9B2D8B4009B1FC2500 /* modules */ = {
+                     isa = PBXGroup;
+                     children = (
+                            B6A6F8D56487415086203B3A /* opencv_softcascade */,
+                     );
+                     name = modules;
+                     sourceTree = "<group>";
+              };
+              B6A6F8D56487415086203B3A /* opencv_softcascade */ = {
+                     isa = PBXGroup;
+                     children = (
+                            8B9C83E5AE8543FA9B7F825A /* Include */,
+                            7D1EA8BC19274D4CAF1A840E /* Src */,
+                            19763FA864774B27AED2A05E /* Header Files */,
+                            AE45CC10592E407AB1CBF211 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/CMakeLists.txt */,
+                            FCB81361CB96432487DD15A2 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/cuda/channels.cu */,
+                            D2C4CF124CC944BF8379B627 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/cuda/icf-sc.cu */,
+                     );
+                     name = opencv_softcascade;
+                     sourceTree = "<group>";
+              };
+              8B9C83E5AE8543FA9B7F825A /* Include */ = {
+                     isa = PBXGroup;
+                     children = (
+                            FCD3E93FB1B54DA5A414B120 /* opencv2 */,
+                     );
+                     name = Include;
+                     sourceTree = "<group>";
+              };
+              FCD3E93FB1B54DA5A414B120 /* opencv2 */ = {
+                     isa = PBXGroup;
+                     children = (
+                            A6B072A543D6410A8F44C36F /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/include/opencv2/softcascade.hpp */,
+                     );
+                     name = opencv2;
+                     sourceTree = "<group>";
+              };
+              7D1EA8BC19274D4CAF1A840E /* Src */ = {
+                     isa = PBXGroup;
+                     children = (
+                            FC4F11C3D3BD4016A645D995 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/cuda_invoker.hpp */,
+                            A43A496D8E9E4B30B37BF819 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/detector.cpp */,
+                            223757FDF6544D11B1C844F4 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/detector_cuda.cpp */,
+                            D190F7DAFD40429C9D32D442 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/integral_channel_builder.cpp */,
+                            2AAEAE69222D4A37BF5DAE5E /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/octave.cpp */,
+                            5EBCE5FF25FE4E81B8DA319C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/precomp.hpp */,
+                            B3D3F95FE9304C088C8C9B29 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/softcascade_init.cpp */,
+                     );
+                     name = Src;
+                     sourceTree = "<group>";
+              };
+              19763FA864774B27AED2A05E /* Header Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            50F8149ECA8744ECB4C4222F /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/cvconfig.h */,
+                            2D11C98233984FD399EA6302 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/opencv2/opencv_modules.hpp */,
+                     );
+                     name = "Header Files";
+                     sourceTree = "<group>";
+              };
+              498DE38ABCB3443FA6C30AD6 /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            BD19913F747C430E98D6FAE6 /* opencv_softcascade */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+              5E632F38F9744C4392DF4CAA /* opencv_softcascade */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = 16D8E5B744024F8793C98B37 /* Build configuration list for PBXNativeTarget "opencv_softcascade" */;
+                     buildPhases = (
+                            8EC5C0105FCA472284CB2739 /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            90D6D759B463447087044A0F /* PBXTargetDependency */,
+                     );
+                     name = opencv_softcascade;
+                     productName = opencv_softcascade;
+                     productReference = BD19913F747C430E98D6FAE6 /* opencv_softcascade */;
+                     productType = "com.apple.product-type.library.static";
+              };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+              1168029544D24D488FB2D703 /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = 1CF2C47079114F4DA16DBB71 /* Build configuration list for PBXProject  "opencv_softcascade" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            AEB2E75E866D4DE4BD524C56 /* Debug */,
+                            6DB429439A2F46D9BB5146B4 /* Release */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = F52E2B3235C342AE889DF7B3;
+                     projectDirPath = /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade;
+                     projectRoot = "";
+                     targets = (
+                            FA3A8C0A26B14E97B0F88C88 /* ALL_BUILD */,
+                            A79B86F0609B4B1B98C7053A /* ZERO_CHECK */,
+                            8EAAC43563904E37BB91E765 /* install */,
+                            5E632F38F9744C4392DF4CAA /* opencv_softcascade */,
+                            67F045D32BCC458EBF8813EB /* package */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              55667D1F4C1D4AFCB27FD000 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              655568FC9D8B431FBE8837F9 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/modules/softcascade -f /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/modules/softcascade/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              1179C778B66A476794B2AA5E /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              AA087ACC275F429E80177985 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/modules/softcascade -f /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/modules/softcascade/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              BD9E3F6737734A1AA5815800 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              738F0011F9814B6A983FCC62 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/modules/softcascade -f /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/modules/softcascade/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              542EDE353E8A4453907D53ED /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              44134DC2957D488BB30EB566 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/modules/softcascade -f /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/modules/softcascade/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+              8EC5C0105FCA472284CB2739 /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            CABABFACCFCF4271891EF03B /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/detector.cpp */,
+                            A84356B86A1F4FF29F83D4A8 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/detector_cuda.cpp */,
+                            5E25428917B847E181803AC5 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/integral_channel_builder.cpp */,
+                            A5AAE003A3954EB7A87AC3F5 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/octave.cpp */,
+                            EDD4A8D12DC44CB781B21DDB /* /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src/softcascade_init.cpp */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              3EB5D63842004FD78131D1F7 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 5E632F38F9744C4392DF4CAA /* opencv_softcascade */;
+                     targetProxy = 142454CC0E9446DAA5FC7434 /* PBXContainerItemProxy */;
+              };
+              2F7E26E5394D4FA6B4CC800D /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = A79B86F0609B4B1B98C7053A /* ZERO_CHECK */;
+                     targetProxy = BE775D5D3EE04A7C9BDE46B6 /* PBXContainerItemProxy */;
+              };
+              4D3E5180F0404EE2892DFAB9 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = FA3A8C0A26B14E97B0F88C88 /* ALL_BUILD */;
+                     targetProxy = DF6C16B4DD2A4EEB832B100C /* PBXContainerItemProxy */;
+              };
+              90D6D759B463447087044A0F /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = A79B86F0609B4B1B98C7053A /* ZERO_CHECK */;
+                     targetProxy = 0291833E847246A285831752 /* PBXContainerItemProxy */;
+              };
+              E5FEA54B363C4FB688565C49 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = FA3A8C0A26B14E97B0F88C88 /* ALL_BUILD */;
+                     targetProxy = 3FD2A6D0ECAF4CBEA4B2F0F3 /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              DA43A66ED71E475CBFDC772F /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/modules/softcascade/build";
+                     };
+                     name = Debug;
+              };
+              AC2C2853E31745F7A390B633 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/modules/softcascade/build";
+                     };
+                     name = Release;
+              };
+              7DCAAE521F99441798E97B7D /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/ml/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/modules/softcascade", /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/modules/softcascade";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              B5B4B5D30A5B4545858B1726 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/ml/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/modules/softcascade", /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/modules/softcascade";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              9AA2157E9CE84C38888B7082 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/ml/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/modules/softcascade", /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/modules/softcascade";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              A7EA5D04D0CE4A31A2E9168C /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/ml/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/modules/softcascade", /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/modules/softcascade";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              4077CFB535064FCEBEFA7A22 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/ml/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/modules/softcascade", /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/modules/softcascade";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              345E90B44C18431A93AAA06E /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/ml/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/modules/softcascade", /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/modules/softcascade";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              0611ADA3BC1E42C9AF3D2EB5 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/lib/Debug";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", OPENCV_NOSTL, "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/ml/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/modules/softcascade", /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC           -DDEBUG -D_DEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "-stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC           -DDEBUG -D_DEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = opencv_softcascade;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/modules/softcascade";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              255B3FF1835443FCB19A27B8 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/lib/Release";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", OPENCV_NOSTL, "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/ml/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/modules/softcascade", /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC       -DNDEBUG  -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "-stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC   -DNDEBUG     -fomit-frame-pointer -ffast-math  -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = opencv_softcascade;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/modules/softcascade";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              E9374192B4894AA899E54268 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/ml/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/modules/softcascade", /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/modules/softcascade";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              BA88EC7DF82142C0A86913DD /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/ml/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/modules/softcascade", /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/softcascade/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-x86_64/modules/softcascade";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              1CF2C47079114F4DA16DBB71 /* Build configuration list for PBXProject  "opencv_softcascade" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            DA43A66ED71E475CBFDC772F /* Debug */,
+                            AC2C2853E31745F7A390B633 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              55C930E60E334E3B8797FDD2 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            7DCAAE521F99441798E97B7D /* Debug */,
+                            B5B4B5D30A5B4545858B1726 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              B754A397CA9A43318F889BA4 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            9AA2157E9CE84C38888B7082 /* Debug */,
+                            A7EA5D04D0CE4A31A2E9168C /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              0935CDFC3AE047C280D29F74 /* Build configuration list for PBXAggregateTarget "install" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            4077CFB535064FCEBEFA7A22 /* Debug */,
+                            345E90B44C18431A93AAA06E /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              16D8E5B744024F8793C98B37 /* Build configuration list for PBXNativeTarget "opencv_softcascade" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            0611ADA3BC1E42C9AF3D2EB5 /* Debug */,
+                            255B3FF1835443FCB19A27B8 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              A27F8285BAF041D1869A867E /* Build configuration list for PBXAggregateTarget "package" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            E9374192B4894AA899E54268 /* Debug */,
+                            BA88EC7DF82142C0A86913DD /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = 1168029544D24D488FB2D703;
+}

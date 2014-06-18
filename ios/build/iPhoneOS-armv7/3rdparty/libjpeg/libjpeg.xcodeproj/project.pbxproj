@@ -1,0 +1,958 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              33840C5E47D04F6C976C23DC /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 945FBA8819604099A3196428 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            4EF430100F2B4D41A0BA2589 /* CMake Rules */,
+                     );
+                     dependencies = (
+                            40FC7327657E4BE5B9740400 /* PBXTargetDependency */,
+                            5CBCFCAC56B142F89F0E185F /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              5B3D48B745FB41D2A6D837A4 /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 58B6ABA5669242B2858B7F4E /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            0B7DC0246B374DD3AB6492A3 /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+              CF5CA2C88B8A4BBB897E0D9A /* install */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 41738F11322B4DCC8307A741 /* Build configuration list for PBXAggregateTarget "install" */;
+                     buildPhases = (
+                            C3176D4654EF45DC82C02138 /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            51F8F9BA6D6843E5BAF29CC6 /* PBXTargetDependency */,
+                     );
+                     name = install;
+                     productName = install;
+              };
+              5B1CCC54F44444A19BE72698 /* package */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = E1B470A16F8F44818BE21B2F /* Build configuration list for PBXAggregateTarget "package" */;
+                     buildPhases = (
+                            CEB9E3674B3E4B26BC6F292A /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            02E2CD386DF041818E866317 /* PBXTargetDependency */,
+                     );
+                     name = package;
+                     productName = package;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+AB6837FBF199467E9F503176 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = BF4A8396C8E548A596542C7B /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+B3A0C2F627614B9AB142E14C /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jaricom.c */ = {isa = PBXBuildFile; fileRef = F463E65D13734DC997C453F1 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jaricom.c */; settings = { COMPILER_FLAGS = ""; }; };
+9E70187A18D24D7A90EB0DBC /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcapimin.c */ = {isa = PBXBuildFile; fileRef = B7680BD1197C4939A67E68FF /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcapimin.c */; settings = { COMPILER_FLAGS = ""; }; };
+493D4879DF8045888CE4E877 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcapistd.c */ = {isa = PBXBuildFile; fileRef = 4D83447FAE2E43FC9556E083 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcapistd.c */; settings = { COMPILER_FLAGS = ""; }; };
+F424C2ECC9F4403CA62C08C7 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcarith.c */ = {isa = PBXBuildFile; fileRef = A4D2D81500DD45D8BC90F55F /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcarith.c */; settings = { COMPILER_FLAGS = ""; }; };
+39476FCAD79A452AB76A55A7 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jccoefct.c */ = {isa = PBXBuildFile; fileRef = D68783F34EAF429DA5FC61B1 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jccoefct.c */; settings = { COMPILER_FLAGS = ""; }; };
+C9A7ABC7D71B47869A25326C /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jccolor.c */ = {isa = PBXBuildFile; fileRef = 5F4A4AC1E49840A8B4A9C5AA /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jccolor.c */; settings = { COMPILER_FLAGS = ""; }; };
+C72DC6CEE27846DD88AC8631 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcdctmgr.c */ = {isa = PBXBuildFile; fileRef = 77D37B83EE6A41ACBEEA24D6 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcdctmgr.c */; settings = { COMPILER_FLAGS = "-O1"; }; };
+F20365C91767453FA0582730 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jchuff.c */ = {isa = PBXBuildFile; fileRef = 34EC2F7631FA44AF8E2CED42 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jchuff.c */; settings = { COMPILER_FLAGS = ""; }; };
+0D16AEF3CA0C449E819A09EA /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcinit.c */ = {isa = PBXBuildFile; fileRef = D9EE9B9AEC18456CBA97384E /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcinit.c */; settings = { COMPILER_FLAGS = ""; }; };
+BCB5C1329A7D4A04A65C78B4 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcmainct.c */ = {isa = PBXBuildFile; fileRef = 43AA4B1FE9D048B38E823F96 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcmainct.c */; settings = { COMPILER_FLAGS = ""; }; };
+1A878F27DF154340A7730C98 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcmarker.c */ = {isa = PBXBuildFile; fileRef = BD68F3EF03FB4B0E998A8997 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcmarker.c */; settings = { COMPILER_FLAGS = ""; }; };
+695D3EA6920742519EC74425 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcmaster.c */ = {isa = PBXBuildFile; fileRef = 7DBF38C2010C4CC8AC327A64 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcmaster.c */; settings = { COMPILER_FLAGS = ""; }; };
+4F268EBAAA8F44A39E3DA76E /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcomapi.c */ = {isa = PBXBuildFile; fileRef = 252BACDC169146DE95A5014E /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcomapi.c */; settings = { COMPILER_FLAGS = ""; }; };
+21ECA9C699B645938FB54709 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jconfig.h */ = {isa = PBXBuildFile; fileRef = 9D6EB95F515E4032BD1F0638 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jconfig.h */; settings = { COMPILER_FLAGS = ""; }; };
+F29FF6D39081499A8DC9128A /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcparam.c */ = {isa = PBXBuildFile; fileRef = 47092C738A884913A91D00F4 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcparam.c */; settings = { COMPILER_FLAGS = ""; }; };
+F1E897C1C1184CCA9FFDC814 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcprepct.c */ = {isa = PBXBuildFile; fileRef = 8848D10175154B0EB5FFCC82 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcprepct.c */; settings = { COMPILER_FLAGS = ""; }; };
+B17599469F764614B4277AF8 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcsample.c */ = {isa = PBXBuildFile; fileRef = 87930EB236AD4EDDBDF30537 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcsample.c */; settings = { COMPILER_FLAGS = ""; }; };
+BF7D219A695B494A84809D60 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jctrans.c */ = {isa = PBXBuildFile; fileRef = 6BFDB831812E4D9FA811834A /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jctrans.c */; settings = { COMPILER_FLAGS = ""; }; };
+55586B373CBE4157AD6FE866 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdapimin.c */ = {isa = PBXBuildFile; fileRef = 1F1F75C8A67643FA91DCCF57 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdapimin.c */; settings = { COMPILER_FLAGS = ""; }; };
+25ACBBEBB4734CE7BAF12D64 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdapistd.c */ = {isa = PBXBuildFile; fileRef = B8B702D376474CDBB998F283 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdapistd.c */; settings = { COMPILER_FLAGS = ""; }; };
+2FEF1D5240F5469183419D94 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdarith.c */ = {isa = PBXBuildFile; fileRef = 56F769D188994BF68A38575D /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdarith.c */; settings = { COMPILER_FLAGS = ""; }; };
+6DA406619B834E6E943E302D /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdatadst.c */ = {isa = PBXBuildFile; fileRef = 8884BE5E02474AD5947C156D /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdatadst.c */; settings = { COMPILER_FLAGS = ""; }; };
+83076C362B704958AD29F478 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdatasrc.c */ = {isa = PBXBuildFile; fileRef = EA4B5111F2AA4A0DAD58910F /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdatasrc.c */; settings = { COMPILER_FLAGS = ""; }; };
+45C3019CF80A48979D42B58D /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdcoefct.c */ = {isa = PBXBuildFile; fileRef = 62133B7CCF4742F0B55764C9 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdcoefct.c */; settings = { COMPILER_FLAGS = ""; }; };
+940624F92F864A969AA84976 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdcolor.c */ = {isa = PBXBuildFile; fileRef = 8B64466AA7BB472189547219 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdcolor.c */; settings = { COMPILER_FLAGS = ""; }; };
+D65DB67C3B4F412DA64E9986 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdct.h */ = {isa = PBXBuildFile; fileRef = 0F87EE065B854514A59BA281 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdct.h */; settings = { COMPILER_FLAGS = ""; }; };
+6F533C69501D463F83242425 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jddctmgr.c */ = {isa = PBXBuildFile; fileRef = 911A5720052B418D9EAA7677 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jddctmgr.c */; settings = { COMPILER_FLAGS = ""; }; };
+9A078A154FA245E7AB750243 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdhuff.c */ = {isa = PBXBuildFile; fileRef = 246F16631C884EA5ADD2275A /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdhuff.c */; settings = { COMPILER_FLAGS = ""; }; };
+6DE29FB57CBE4E15A8A8AC2B /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdinput.c */ = {isa = PBXBuildFile; fileRef = A1A4D8C36BFA478AB9C37978 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdinput.c */; settings = { COMPILER_FLAGS = ""; }; };
+89B6A5E937394890B76708AA /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdmainct.c */ = {isa = PBXBuildFile; fileRef = 21CCBE68F7F348A4B0BC65ED /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdmainct.c */; settings = { COMPILER_FLAGS = ""; }; };
+416F9EAD303C4B67B9B19FB8 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdmarker.c */ = {isa = PBXBuildFile; fileRef = 34B36BBAEA1D45FFAB2F696E /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdmarker.c */; settings = { COMPILER_FLAGS = ""; }; };
+B4C29C932CFE4EB29408BE7B /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdmaster.c */ = {isa = PBXBuildFile; fileRef = 8A86D92BB6C24F488A745868 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdmaster.c */; settings = { COMPILER_FLAGS = ""; }; };
+A838168D3E2A489FB1FE08C8 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdmerge.c */ = {isa = PBXBuildFile; fileRef = ED7455EAEF6D47A098D0A540 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdmerge.c */; settings = { COMPILER_FLAGS = ""; }; };
+3C10407C224549F785CCBAA8 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdpostct.c */ = {isa = PBXBuildFile; fileRef = 0A12127E3DD045E9BA499D9B /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdpostct.c */; settings = { COMPILER_FLAGS = ""; }; };
+A4BEC4F883EB4ACFB3B2099D /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdsample.c */ = {isa = PBXBuildFile; fileRef = B6F2E5BFA8F0461F8ADC8956 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdsample.c */; settings = { COMPILER_FLAGS = ""; }; };
+DD22EA99DE8E4B88B4ACD8EE /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdtrans.c */ = {isa = PBXBuildFile; fileRef = EB694BEB7D3F407F9B7B2BDF /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdtrans.c */; settings = { COMPILER_FLAGS = ""; }; };
+66F83E4675F94BBE91673025 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jerror.c */ = {isa = PBXBuildFile; fileRef = 25083FF542B641AA8A8D0FE8 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jerror.c */; settings = { COMPILER_FLAGS = ""; }; };
+FFDADEC492A14FB8BFF7C3BA /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jerror.h */ = {isa = PBXBuildFile; fileRef = B84EC6308B5D4DF29BC1B311 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jerror.h */; settings = { COMPILER_FLAGS = ""; }; };
+B6937A42CCE449D88488B828 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jfdctflt.c */ = {isa = PBXBuildFile; fileRef = 28D50C07237F40EB97305127 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jfdctflt.c */; settings = { COMPILER_FLAGS = ""; }; };
+D19AC3F003A141F9B5ADB3EC /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jfdctfst.c */ = {isa = PBXBuildFile; fileRef = 2DB69DC71A4747D29172C432 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jfdctfst.c */; settings = { COMPILER_FLAGS = ""; }; };
+B6FD43077E4D4686A85B6543 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jfdctint.c */ = {isa = PBXBuildFile; fileRef = 644FC37BA595473FBFE3F579 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jfdctint.c */; settings = { COMPILER_FLAGS = ""; }; };
+F1EE4737371A48BA836EC700 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jidctflt.c */ = {isa = PBXBuildFile; fileRef = 8D490F73206846B4B82465C0 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jidctflt.c */; settings = { COMPILER_FLAGS = ""; }; };
+B55466CFFCA84DBFB63D7D32 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jidctfst.c */ = {isa = PBXBuildFile; fileRef = 94B50AC1E662459797A063EF /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jidctfst.c */; settings = { COMPILER_FLAGS = ""; }; };
+717B15C5449443DC932E4808 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jidctint.c */ = {isa = PBXBuildFile; fileRef = 6961863A8D49463397807BE3 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jidctint.c */; settings = { COMPILER_FLAGS = ""; }; };
+18A37D90078B43A5A4463AB7 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jinclude.h */ = {isa = PBXBuildFile; fileRef = B3E2AC9274C349548A8D256B /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jinclude.h */; settings = { COMPILER_FLAGS = ""; }; };
+34A5D744C9A24188A28774D9 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jmemmgr.c */ = {isa = PBXBuildFile; fileRef = 1C94E166726D4A1492FAF7D7 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jmemmgr.c */; settings = { COMPILER_FLAGS = ""; }; };
+4361BA9BD4E74A37A1DEF8E9 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jmemnobs.c */ = {isa = PBXBuildFile; fileRef = F0086CA66D3A40A29E4FE7BE /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jmemnobs.c */; settings = { COMPILER_FLAGS = ""; }; };
+6A23A7CBC68C4D59BDCC318A /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jmemsys.h */ = {isa = PBXBuildFile; fileRef = 7C33A82D334F4A5C9EAC8988 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jmemsys.h */; settings = { COMPILER_FLAGS = ""; }; };
+F7A4E32442264EF2B4D4873D /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jmorecfg.h */ = {isa = PBXBuildFile; fileRef = 957E8F08EC644E0B96DB471B /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jmorecfg.h */; settings = { COMPILER_FLAGS = ""; }; };
+6CB04ADD0B474CDBB9B3BAB7 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jpegint.h */ = {isa = PBXBuildFile; fileRef = 862C8365B63A49BD89B81D53 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jpegint.h */; settings = { COMPILER_FLAGS = ""; }; };
+76EDF1D3BC6343119C9D2C9F /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jpeglib.h */ = {isa = PBXBuildFile; fileRef = 8D975FBB0B734F4F8090F128 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jpeglib.h */; settings = { COMPILER_FLAGS = ""; }; };
+6736043115B145F5904F5458 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jquant1.c */ = {isa = PBXBuildFile; fileRef = FF92DE4CB54244A19A3D3136 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jquant1.c */; settings = { COMPILER_FLAGS = ""; }; };
+692C29CB98C04CDB87E6E75E /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jquant2.c */ = {isa = PBXBuildFile; fileRef = D0C89E98009D4328B4555C30 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jquant2.c */; settings = { COMPILER_FLAGS = ""; }; };
+0DF600D173F140FCAA911F00 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jutils.c */ = {isa = PBXBuildFile; fileRef = 9689A4A2888349E5BDC5C314 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jutils.c */; settings = { COMPILER_FLAGS = ""; }; };
+A0421A9407B245CB936396D6 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jversion.h */ = {isa = PBXBuildFile; fileRef = D379CF71BF3B43D8862B0B6A /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jversion.h */; settings = { COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+              795EFB603DC8408CB7747D05 /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              9B8A838DDECE49ECB93BAD12 /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              F61F09FED69C4A13A79CEFCC /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              3BBD5B7B50934AA1B8207EB0 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 22CD15B477BB48A6AAD823E0 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 5B3D48B745FB41D2A6D837A4;
+                     remoteInfo = ZERO_CHECK;
+              };
+              DE4F828F0C7242C2A3C36DF7 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 22CD15B477BB48A6AAD823E0 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = BC38737C5C904C45A7A616FC;
+                     remoteInfo = libjpeg;
+              };
+              B82E175A70D14604BD890085 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 22CD15B477BB48A6AAD823E0 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 33840C5E47D04F6C976C23DC;
+                     remoteInfo = ALL_BUILD;
+              };
+              47B4B653E2E145BB909528C3 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 22CD15B477BB48A6AAD823E0 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 5B3D48B745FB41D2A6D837A4;
+                     remoteInfo = ZERO_CHECK;
+              };
+              A3EB2EAD6BE44838AB750C13 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 22CD15B477BB48A6AAD823E0 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 33840C5E47D04F6C976C23DC;
+                     remoteInfo = ALL_BUILD;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+BF4A8396C8E548A596542C7B /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+F463E65D13734DC997C453F1 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jaricom.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jaricom.c"; path = "jaricom.c"; sourceTree = SOURCE_ROOT; };
+B7680BD1197C4939A67E68FF /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcapimin.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcapimin.c"; path = "jcapimin.c"; sourceTree = SOURCE_ROOT; };
+4D83447FAE2E43FC9556E083 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcapistd.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcapistd.c"; path = "jcapistd.c"; sourceTree = SOURCE_ROOT; };
+A4D2D81500DD45D8BC90F55F /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcarith.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcarith.c"; path = "jcarith.c"; sourceTree = SOURCE_ROOT; };
+D68783F34EAF429DA5FC61B1 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jccoefct.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jccoefct.c"; path = "jccoefct.c"; sourceTree = SOURCE_ROOT; };
+5F4A4AC1E49840A8B4A9C5AA /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jccolor.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jccolor.c"; path = "jccolor.c"; sourceTree = SOURCE_ROOT; };
+77D37B83EE6A41ACBEEA24D6 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcdctmgr.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcdctmgr.c"; path = "jcdctmgr.c"; sourceTree = SOURCE_ROOT; };
+34EC2F7631FA44AF8E2CED42 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jchuff.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jchuff.c"; path = "jchuff.c"; sourceTree = SOURCE_ROOT; };
+D9EE9B9AEC18456CBA97384E /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcinit.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcinit.c"; path = "jcinit.c"; sourceTree = SOURCE_ROOT; };
+43AA4B1FE9D048B38E823F96 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcmainct.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcmainct.c"; path = "jcmainct.c"; sourceTree = SOURCE_ROOT; };
+BD68F3EF03FB4B0E998A8997 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcmarker.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcmarker.c"; path = "jcmarker.c"; sourceTree = SOURCE_ROOT; };
+7DBF38C2010C4CC8AC327A64 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcmaster.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcmaster.c"; path = "jcmaster.c"; sourceTree = SOURCE_ROOT; };
+252BACDC169146DE95A5014E /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcomapi.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcomapi.c"; path = "jcomapi.c"; sourceTree = SOURCE_ROOT; };
+9D6EB95F515E4032BD1F0638 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jconfig.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jconfig.h"; path = "jconfig.h"; sourceTree = SOURCE_ROOT; };
+47092C738A884913A91D00F4 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcparam.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcparam.c"; path = "jcparam.c"; sourceTree = SOURCE_ROOT; };
+8848D10175154B0EB5FFCC82 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcprepct.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcprepct.c"; path = "jcprepct.c"; sourceTree = SOURCE_ROOT; };
+87930EB236AD4EDDBDF30537 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcsample.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcsample.c"; path = "jcsample.c"; sourceTree = SOURCE_ROOT; };
+6BFDB831812E4D9FA811834A /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jctrans.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jctrans.c"; path = "jctrans.c"; sourceTree = SOURCE_ROOT; };
+1F1F75C8A67643FA91DCCF57 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdapimin.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdapimin.c"; path = "jdapimin.c"; sourceTree = SOURCE_ROOT; };
+B8B702D376474CDBB998F283 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdapistd.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdapistd.c"; path = "jdapistd.c"; sourceTree = SOURCE_ROOT; };
+56F769D188994BF68A38575D /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdarith.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdarith.c"; path = "jdarith.c"; sourceTree = SOURCE_ROOT; };
+8884BE5E02474AD5947C156D /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdatadst.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdatadst.c"; path = "jdatadst.c"; sourceTree = SOURCE_ROOT; };
+EA4B5111F2AA4A0DAD58910F /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdatasrc.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdatasrc.c"; path = "jdatasrc.c"; sourceTree = SOURCE_ROOT; };
+62133B7CCF4742F0B55764C9 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdcoefct.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdcoefct.c"; path = "jdcoefct.c"; sourceTree = SOURCE_ROOT; };
+8B64466AA7BB472189547219 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdcolor.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdcolor.c"; path = "jdcolor.c"; sourceTree = SOURCE_ROOT; };
+0F87EE065B854514A59BA281 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdct.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jdct.h"; path = "jdct.h"; sourceTree = SOURCE_ROOT; };
+911A5720052B418D9EAA7677 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jddctmgr.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jddctmgr.c"; path = "jddctmgr.c"; sourceTree = SOURCE_ROOT; };
+246F16631C884EA5ADD2275A /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdhuff.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdhuff.c"; path = "jdhuff.c"; sourceTree = SOURCE_ROOT; };
+A1A4D8C36BFA478AB9C37978 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdinput.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdinput.c"; path = "jdinput.c"; sourceTree = SOURCE_ROOT; };
+21CCBE68F7F348A4B0BC65ED /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdmainct.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdmainct.c"; path = "jdmainct.c"; sourceTree = SOURCE_ROOT; };
+34B36BBAEA1D45FFAB2F696E /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdmarker.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdmarker.c"; path = "jdmarker.c"; sourceTree = SOURCE_ROOT; };
+8A86D92BB6C24F488A745868 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdmaster.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdmaster.c"; path = "jdmaster.c"; sourceTree = SOURCE_ROOT; };
+ED7455EAEF6D47A098D0A540 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdmerge.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdmerge.c"; path = "jdmerge.c"; sourceTree = SOURCE_ROOT; };
+0A12127E3DD045E9BA499D9B /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdpostct.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdpostct.c"; path = "jdpostct.c"; sourceTree = SOURCE_ROOT; };
+B6F2E5BFA8F0461F8ADC8956 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdsample.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdsample.c"; path = "jdsample.c"; sourceTree = SOURCE_ROOT; };
+EB694BEB7D3F407F9B7B2BDF /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdtrans.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdtrans.c"; path = "jdtrans.c"; sourceTree = SOURCE_ROOT; };
+25083FF542B641AA8A8D0FE8 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jerror.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jerror.c"; path = "jerror.c"; sourceTree = SOURCE_ROOT; };
+B84EC6308B5D4DF29BC1B311 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jerror.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jerror.h"; path = "jerror.h"; sourceTree = SOURCE_ROOT; };
+28D50C07237F40EB97305127 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jfdctflt.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jfdctflt.c"; path = "jfdctflt.c"; sourceTree = SOURCE_ROOT; };
+2DB69DC71A4747D29172C432 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jfdctfst.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jfdctfst.c"; path = "jfdctfst.c"; sourceTree = SOURCE_ROOT; };
+644FC37BA595473FBFE3F579 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jfdctint.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jfdctint.c"; path = "jfdctint.c"; sourceTree = SOURCE_ROOT; };
+8D490F73206846B4B82465C0 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jidctflt.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jidctflt.c"; path = "jidctflt.c"; sourceTree = SOURCE_ROOT; };
+94B50AC1E662459797A063EF /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jidctfst.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jidctfst.c"; path = "jidctfst.c"; sourceTree = SOURCE_ROOT; };
+6961863A8D49463397807BE3 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jidctint.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jidctint.c"; path = "jidctint.c"; sourceTree = SOURCE_ROOT; };
+B3E2AC9274C349548A8D256B /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jinclude.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jinclude.h"; path = "jinclude.h"; sourceTree = SOURCE_ROOT; };
+1C94E166726D4A1492FAF7D7 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jmemmgr.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jmemmgr.c"; path = "jmemmgr.c"; sourceTree = SOURCE_ROOT; };
+F0086CA66D3A40A29E4FE7BE /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jmemnobs.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jmemnobs.c"; path = "jmemnobs.c"; sourceTree = SOURCE_ROOT; };
+7C33A82D334F4A5C9EAC8988 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jmemsys.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jmemsys.h"; path = "jmemsys.h"; sourceTree = SOURCE_ROOT; };
+957E8F08EC644E0B96DB471B /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jmorecfg.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jmorecfg.h"; path = "jmorecfg.h"; sourceTree = SOURCE_ROOT; };
+862C8365B63A49BD89B81D53 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jpegint.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jpegint.h"; path = "jpegint.h"; sourceTree = SOURCE_ROOT; };
+8D975FBB0B734F4F8090F128 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jpeglib.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jpeglib.h"; path = "jpeglib.h"; sourceTree = SOURCE_ROOT; };
+FF92DE4CB54244A19A3D3136 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jquant1.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jquant1.c"; path = "jquant1.c"; sourceTree = SOURCE_ROOT; };
+D0C89E98009D4328B4555C30 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jquant2.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jquant2.c"; path = "jquant2.c"; sourceTree = SOURCE_ROOT; };
+9689A4A2888349E5BDC5C314 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jutils.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jutils.c"; path = "jutils.c"; sourceTree = SOURCE_ROOT; };
+D379CF71BF3B43D8862B0B6A /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jversion.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jversion.h"; path = "jversion.h"; sourceTree = SOURCE_ROOT; };
+B117CEA83D9C4CFFAD78BFF6 /* libjpeg */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "liblibjpeg.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              5DA420A9509446C893B78C9A  = {
+                     isa = PBXGroup;
+                     children = (
+                            2E02D6EB344842708DD34894 /* Sources */,
+                            76690819197548A78CB8652D /* Resources */,
+                            6137ED03890147529407614E /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              2E02D6EB344842708DD34894 /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            CF62C68CDFA040F5BE8F3A2E /* ALL_BUILD */,
+                            BEA1DAB056B24DF68C8BB219 /* ZERO_CHECK */,
+                            B6253928C0E340AF8FBE0011 /* 3rdparty */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              76690819197548A78CB8652D /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              CF62C68CDFA040F5BE8F3A2E /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            FDE73F08939242B78D078031 /* CMake Rules */,
+                            BF4A8396C8E548A596542C7B /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              FDE73F08939242B78D078031 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              BEA1DAB056B24DF68C8BB219 /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            F722870FA34E4CDCBF71DF21 /* CMake Rules */,
+                            BF4A8396C8E548A596542C7B /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              F722870FA34E4CDCBF71DF21 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              B6253928C0E340AF8FBE0011 /* 3rdparty */ = {
+                     isa = PBXGroup;
+                     children = (
+                            86500695DC2541B3AA65DDB2 /* libjpeg */,
+                     );
+                     name = 3rdparty;
+                     sourceTree = "<group>";
+              };
+              86500695DC2541B3AA65DDB2 /* libjpeg */ = {
+                     isa = PBXGroup;
+                     children = (
+                            01297CAC441F408EB536874D /* Source Files */,
+                            E55CD16C248D405681CA5184 /* Header Files */,
+                            BF4A8396C8E548A596542C7B /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/CMakeLists.txt */,
+                     );
+                     name = libjpeg;
+                     sourceTree = "<group>";
+              };
+              01297CAC441F408EB536874D /* Source Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            F463E65D13734DC997C453F1 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jaricom.c */,
+                            B7680BD1197C4939A67E68FF /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcapimin.c */,
+                            4D83447FAE2E43FC9556E083 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcapistd.c */,
+                            A4D2D81500DD45D8BC90F55F /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcarith.c */,
+                            D68783F34EAF429DA5FC61B1 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jccoefct.c */,
+                            5F4A4AC1E49840A8B4A9C5AA /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jccolor.c */,
+                            77D37B83EE6A41ACBEEA24D6 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcdctmgr.c */,
+                            34EC2F7631FA44AF8E2CED42 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jchuff.c */,
+                            D9EE9B9AEC18456CBA97384E /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcinit.c */,
+                            43AA4B1FE9D048B38E823F96 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcmainct.c */,
+                            BD68F3EF03FB4B0E998A8997 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcmarker.c */,
+                            7DBF38C2010C4CC8AC327A64 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcmaster.c */,
+                            252BACDC169146DE95A5014E /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcomapi.c */,
+                            47092C738A884913A91D00F4 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcparam.c */,
+                            8848D10175154B0EB5FFCC82 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcprepct.c */,
+                            87930EB236AD4EDDBDF30537 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcsample.c */,
+                            6BFDB831812E4D9FA811834A /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jctrans.c */,
+                            1F1F75C8A67643FA91DCCF57 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdapimin.c */,
+                            B8B702D376474CDBB998F283 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdapistd.c */,
+                            56F769D188994BF68A38575D /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdarith.c */,
+                            8884BE5E02474AD5947C156D /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdatadst.c */,
+                            EA4B5111F2AA4A0DAD58910F /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdatasrc.c */,
+                            62133B7CCF4742F0B55764C9 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdcoefct.c */,
+                            8B64466AA7BB472189547219 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdcolor.c */,
+                            911A5720052B418D9EAA7677 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jddctmgr.c */,
+                            246F16631C884EA5ADD2275A /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdhuff.c */,
+                            A1A4D8C36BFA478AB9C37978 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdinput.c */,
+                            21CCBE68F7F348A4B0BC65ED /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdmainct.c */,
+                            34B36BBAEA1D45FFAB2F696E /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdmarker.c */,
+                            8A86D92BB6C24F488A745868 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdmaster.c */,
+                            ED7455EAEF6D47A098D0A540 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdmerge.c */,
+                            0A12127E3DD045E9BA499D9B /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdpostct.c */,
+                            B6F2E5BFA8F0461F8ADC8956 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdsample.c */,
+                            EB694BEB7D3F407F9B7B2BDF /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdtrans.c */,
+                            25083FF542B641AA8A8D0FE8 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jerror.c */,
+                            28D50C07237F40EB97305127 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jfdctflt.c */,
+                            2DB69DC71A4747D29172C432 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jfdctfst.c */,
+                            644FC37BA595473FBFE3F579 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jfdctint.c */,
+                            8D490F73206846B4B82465C0 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jidctflt.c */,
+                            94B50AC1E662459797A063EF /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jidctfst.c */,
+                            6961863A8D49463397807BE3 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jidctint.c */,
+                            1C94E166726D4A1492FAF7D7 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jmemmgr.c */,
+                            F0086CA66D3A40A29E4FE7BE /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jmemnobs.c */,
+                            FF92DE4CB54244A19A3D3136 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jquant1.c */,
+                            D0C89E98009D4328B4555C30 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jquant2.c */,
+                            9689A4A2888349E5BDC5C314 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jutils.c */,
+                     );
+                     name = "Source Files";
+                     sourceTree = "<group>";
+              };
+              E55CD16C248D405681CA5184 /* Header Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            9D6EB95F515E4032BD1F0638 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jconfig.h */,
+                            0F87EE065B854514A59BA281 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdct.h */,
+                            B84EC6308B5D4DF29BC1B311 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jerror.h */,
+                            B3E2AC9274C349548A8D256B /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jinclude.h */,
+                            7C33A82D334F4A5C9EAC8988 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jmemsys.h */,
+                            957E8F08EC644E0B96DB471B /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jmorecfg.h */,
+                            862C8365B63A49BD89B81D53 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jpegint.h */,
+                            8D975FBB0B734F4F8090F128 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jpeglib.h */,
+                            D379CF71BF3B43D8862B0B6A /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jversion.h */,
+                     );
+                     name = "Header Files";
+                     sourceTree = "<group>";
+              };
+              6137ED03890147529407614E /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            B117CEA83D9C4CFFAD78BFF6 /* libjpeg */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+              BC38737C5C904C45A7A616FC /* libjpeg */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = 57C9737A4FB34B31B192A05F /* Build configuration list for PBXNativeTarget "libjpeg" */;
+                     buildPhases = (
+                            EA022FCA39074275A98A63C0 /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            9446649974694E0A86A0F63B /* PBXTargetDependency */,
+                     );
+                     name = libjpeg;
+                     productName = libjpeg;
+                     productReference = B117CEA83D9C4CFFAD78BFF6 /* libjpeg */;
+                     productType = "com.apple.product-type.library.static";
+              };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+              22CD15B477BB48A6AAD823E0 /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = CCABD1E8B7F643B38D507FDF /* Build configuration list for PBXProject  "libjpeg" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            9B8A838DDECE49ECB93BAD12 /* Debug */,
+                            F61F09FED69C4A13A79CEFCC /* Release */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = 5DA420A9509446C893B78C9A;
+                     projectDirPath = /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg;
+                     projectRoot = "";
+                     targets = (
+                            33840C5E47D04F6C976C23DC /* ALL_BUILD */,
+                            5B3D48B745FB41D2A6D837A4 /* ZERO_CHECK */,
+                            CF5CA2C88B8A4BBB897E0D9A /* install */,
+                            BC38737C5C904C45A7A616FC /* libjpeg */,
+                            5B1CCC54F44444A19BE72698 /* package */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              2593A9153374462282F89544 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              4EF430100F2B4D41A0BA2589 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7/3rdparty/libjpeg -f /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7/3rdparty/libjpeg/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              1C9807668C0C4F44A6FE7980 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              0B7DC0246B374DD3AB6492A3 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7/3rdparty/libjpeg -f /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7/3rdparty/libjpeg/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              EF50AF517FBA45739D934CBC /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              C3176D4654EF45DC82C02138 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7/3rdparty/libjpeg -f /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7/3rdparty/libjpeg/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              5B858597FEC1469A8F8D7350 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              CEB9E3674B3E4B26BC6F292A /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7/3rdparty/libjpeg -f /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7/3rdparty/libjpeg/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+              EA022FCA39074275A98A63C0 /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            B3A0C2F627614B9AB142E14C /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jaricom.c */,
+                            9E70187A18D24D7A90EB0DBC /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcapimin.c */,
+                            493D4879DF8045888CE4E877 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcapistd.c */,
+                            F424C2ECC9F4403CA62C08C7 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcarith.c */,
+                            39476FCAD79A452AB76A55A7 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jccoefct.c */,
+                            C9A7ABC7D71B47869A25326C /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jccolor.c */,
+                            C72DC6CEE27846DD88AC8631 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcdctmgr.c */,
+                            F20365C91767453FA0582730 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jchuff.c */,
+                            0D16AEF3CA0C449E819A09EA /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcinit.c */,
+                            BCB5C1329A7D4A04A65C78B4 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcmainct.c */,
+                            1A878F27DF154340A7730C98 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcmarker.c */,
+                            695D3EA6920742519EC74425 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcmaster.c */,
+                            4F268EBAAA8F44A39E3DA76E /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcomapi.c */,
+                            F29FF6D39081499A8DC9128A /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcparam.c */,
+                            F1E897C1C1184CCA9FFDC814 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcprepct.c */,
+                            B17599469F764614B4277AF8 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jcsample.c */,
+                            BF7D219A695B494A84809D60 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jctrans.c */,
+                            55586B373CBE4157AD6FE866 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdapimin.c */,
+                            25ACBBEBB4734CE7BAF12D64 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdapistd.c */,
+                            2FEF1D5240F5469183419D94 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdarith.c */,
+                            6DA406619B834E6E943E302D /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdatadst.c */,
+                            83076C362B704958AD29F478 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdatasrc.c */,
+                            45C3019CF80A48979D42B58D /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdcoefct.c */,
+                            940624F92F864A969AA84976 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdcolor.c */,
+                            6F533C69501D463F83242425 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jddctmgr.c */,
+                            9A078A154FA245E7AB750243 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdhuff.c */,
+                            6DE29FB57CBE4E15A8A8AC2B /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdinput.c */,
+                            89B6A5E937394890B76708AA /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdmainct.c */,
+                            416F9EAD303C4B67B9B19FB8 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdmarker.c */,
+                            B4C29C932CFE4EB29408BE7B /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdmaster.c */,
+                            A838168D3E2A489FB1FE08C8 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdmerge.c */,
+                            3C10407C224549F785CCBAA8 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdpostct.c */,
+                            A4BEC4F883EB4ACFB3B2099D /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdsample.c */,
+                            DD22EA99DE8E4B88B4ACD8EE /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jdtrans.c */,
+                            66F83E4675F94BBE91673025 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jerror.c */,
+                            B6937A42CCE449D88488B828 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jfdctflt.c */,
+                            D19AC3F003A141F9B5ADB3EC /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jfdctfst.c */,
+                            B6FD43077E4D4686A85B6543 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jfdctint.c */,
+                            F1EE4737371A48BA836EC700 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jidctflt.c */,
+                            B55466CFFCA84DBFB63D7D32 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jidctfst.c */,
+                            717B15C5449443DC932E4808 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jidctint.c */,
+                            34A5D744C9A24188A28774D9 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jmemmgr.c */,
+                            4361BA9BD4E74A37A1DEF8E9 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jmemnobs.c */,
+                            6736043115B145F5904F5458 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jquant1.c */,
+                            692C29CB98C04CDB87E6E75E /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jquant2.c */,
+                            0DF600D173F140FCAA911F00 /* /Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg/jutils.c */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              40FC7327657E4BE5B9740400 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 5B3D48B745FB41D2A6D837A4 /* ZERO_CHECK */;
+                     targetProxy = 3BBD5B7B50934AA1B8207EB0 /* PBXContainerItemProxy */;
+              };
+              5CBCFCAC56B142F89F0E185F /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = BC38737C5C904C45A7A616FC /* libjpeg */;
+                     targetProxy = DE4F828F0C7242C2A3C36DF7 /* PBXContainerItemProxy */;
+              };
+              51F8F9BA6D6843E5BAF29CC6 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 33840C5E47D04F6C976C23DC /* ALL_BUILD */;
+                     targetProxy = B82E175A70D14604BD890085 /* PBXContainerItemProxy */;
+              };
+              9446649974694E0A86A0F63B /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 5B3D48B745FB41D2A6D837A4 /* ZERO_CHECK */;
+                     targetProxy = 47B4B653E2E145BB909528C3 /* PBXContainerItemProxy */;
+              };
+              02E2CD386DF041818E866317 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 33840C5E47D04F6C976C23DC /* ALL_BUILD */;
+                     targetProxy = A3EB2EAD6BE44838AB750C13 /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              DF372F0BDB52476EA81FB74F /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7/3rdparty/libjpeg/build";
+                     };
+                     name = Debug;
+              };
+              439C29CC14DF443E99DFBDC0 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7/3rdparty/libjpeg/build";
+                     };
+                     name = Release;
+              };
+              1766E03C1402478485365EEE /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              E1685D71498648A697A0699A /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              8335DA2ECE6B48C09EBBEA97 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              85D9F488FD904181879F4488 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              E18206130081434D93503FA7 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              42F24FFD043845A89A380507 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              07B398498C90413C9B18EEBC /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7/3rdparty/lib/Debug";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC   -fPIC         -DDEBUG -D_DEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = libjpeg;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              8972454B53F346AEBA226AAD /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7/3rdparty/lib/Release";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC   -fPIC     -DNDEBUG  -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = libjpeg;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              1B297A95BBF54312885BECF5 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              777B7E5BCE544E97A6082832 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/3rdparty/libjpeg, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              CCABD1E8B7F643B38D507FDF /* Build configuration list for PBXProject  "libjpeg" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            DF372F0BDB52476EA81FB74F /* Debug */,
+                            439C29CC14DF443E99DFBDC0 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              945FBA8819604099A3196428 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            1766E03C1402478485365EEE /* Debug */,
+                            E1685D71498648A697A0699A /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              58B6ABA5669242B2858B7F4E /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            8335DA2ECE6B48C09EBBEA97 /* Debug */,
+                            85D9F488FD904181879F4488 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              41738F11322B4DCC8307A741 /* Build configuration list for PBXAggregateTarget "install" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            E18206130081434D93503FA7 /* Debug */,
+                            42F24FFD043845A89A380507 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              57C9737A4FB34B31B192A05F /* Build configuration list for PBXNativeTarget "libjpeg" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            07B398498C90413C9B18EEBC /* Debug */,
+                            8972454B53F346AEBA226AAD /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              E1B470A16F8F44818BE21B2F /* Build configuration list for PBXAggregateTarget "package" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            1B297A95BBF54312885BECF5 /* Debug */,
+                            777B7E5BCE544E97A6082832 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = 22CD15B477BB48A6AAD823E0;
+}

@@ -1,0 +1,929 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              3C2A2A4281C34C8EAC4B92F6 /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 503CFA214DFC4DA5A7527711 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            CE8559DF583D450B93AB1F94 /* CMake Rules */,
+                     );
+                     dependencies = (
+                            062BF3BEF4BB4289BF56FA5F /* PBXTargetDependency */,
+                            127CFE3285154EAF87B23789 /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              9A95E36E5B04496F958C1BA7 /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = AE3B047ED7C94126B1AED93C /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            12E3565B3C794958AD1A8512 /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+              F42DADB33A10480396921E11 /* install */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 2D2D4D2DE6454A9A85880BB7 /* Build configuration list for PBXAggregateTarget "install" */;
+                     buildPhases = (
+                            D187B0B4599E449D81673F0C /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            EBA4830228E44939A1F1F7E0 /* PBXTargetDependency */,
+                     );
+                     name = install;
+                     productName = install;
+              };
+              8FC03E3D524347F7857B77BA /* package */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 3407FA28861443D8A33A01D7 /* Build configuration list for PBXAggregateTarget "package" */;
+                     buildPhases = (
+                            5C461AA428514856ADA8E7AC /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            7490D362455A4B21974893F4 /* PBXTargetDependency */,
+                     );
+                     name = package;
+                     productName = package;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+A3DAA79918EE4523B5AE7B8A /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/cvconfig.h */ = {isa = PBXBuildFile; fileRef = 0F280015CC334B38804E9994 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/cvconfig.h */; settings = { COMPILER_FLAGS = ""; }; };
+D905F0094DF7464AAF64D0D2 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video/opencl_kernels.cpp */ = {isa = PBXBuildFile; fileRef = 4B823EDDE20040809FC6096B /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video/opencl_kernels.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+58A756AB7C534A13A8B584FE /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video/opencl_kernels.cpp.rule */ = {isa = PBXBuildFile; fileRef = 14DBB6810B9F4FBFBE1E4140 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video/opencl_kernels.cpp.rule */; settings = { COMPILER_FLAGS = ""; }; };
+BB833B0A4A924B3ABF7DC4D8 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video/opencl_kernels.hpp */ = {isa = PBXBuildFile; fileRef = 9162A70DA2B145FFBF122560 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video/opencl_kernels.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+8D54657DF54F4E2685D08400 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/opencv2/opencv_modules.hpp */ = {isa = PBXBuildFile; fileRef = EB9A031626E24861A7F05752 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/opencv2/opencv_modules.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+1FA3B4297A2A443EA16E74A7 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = A1E2F3E19D2E4E58ADF4CAC0 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+0ED5B81B845A441782190D76 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/include/opencv2/video.hpp */ = {isa = PBXBuildFile; fileRef = 29A7D70540614DB9949DA952 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/include/opencv2/video.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+8023056F3C1E40818601551F /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/include/opencv2/video/background_segm.hpp */ = {isa = PBXBuildFile; fileRef = 8136494ED0434166BC989D9F /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/include/opencv2/video/background_segm.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+83CD0851BDEA4BB393BA017F /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/include/opencv2/video/tracking.hpp */ = {isa = PBXBuildFile; fileRef = FB2961F7C53344DF9FB87890 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/include/opencv2/video/tracking.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+CAFB4106A4D84BE09EE2CF51 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/include/opencv2/video/tracking_c.h */ = {isa = PBXBuildFile; fileRef = DDD93D48DC354DE9AEBE7BBB /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/include/opencv2/video/tracking_c.h */; settings = { COMPILER_FLAGS = ""; }; };
+9F95736F4B1E4F9599E2E283 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/include/opencv2/video/video.hpp */ = {isa = PBXBuildFile; fileRef = 71395D4852CE4DADA0C0619A /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/include/opencv2/video/video.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+BFE26EC4EBB444118F51729F /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/affineflow.cpp */ = {isa = PBXBuildFile; fileRef = FCF20EAE4BB8424CA9B250A0 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/affineflow.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+728CDC09D09849669FFC005F /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/bgfg_KNN.cpp */ = {isa = PBXBuildFile; fileRef = 58F150621ED64297BB0A8D66 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/bgfg_KNN.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+421F81FF022B4E068BC42D62 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/bgfg_gaussmix.cpp */ = {isa = PBXBuildFile; fileRef = A6F8873121D94434979B2A17 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/bgfg_gaussmix.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+9EAB71C818B746C5AC4C863F /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/bgfg_gaussmix2.cpp */ = {isa = PBXBuildFile; fileRef = 713AC04009C7473284E29F94 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/bgfg_gaussmix2.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+3AD4AC1B2E234F77A9728D53 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/bgfg_gmg.cpp */ = {isa = PBXBuildFile; fileRef = 3B42464FCC774F2CA26B1CFF /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/bgfg_gmg.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+00039ED55C7C4E889DD01E59 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/camshift.cpp */ = {isa = PBXBuildFile; fileRef = F230340667A14B1DB78C9CCA /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/camshift.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+82CB75EBB33B4A1D9E0BA780 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/compat_video.cpp */ = {isa = PBXBuildFile; fileRef = C31D28236C594488A568A13D /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/compat_video.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+C8F642D1F66D49A6893357AC /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/ecc.cpp */ = {isa = PBXBuildFile; fileRef = D5032270182248F2BE9AF967 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/ecc.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+4317D925AFAC4313AA3533ED /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/kalman.cpp */ = {isa = PBXBuildFile; fileRef = 564EEFD662FA4284A66C1D8C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/kalman.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+7892520B87524A29A29B1E8F /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/lkpyramid.cpp */ = {isa = PBXBuildFile; fileRef = 7BB706A72DA944E39A9A5BF0 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/lkpyramid.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+7CAF4A90F78E44A9A7EA2671 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/lkpyramid.hpp */ = {isa = PBXBuildFile; fileRef = CF9FDAC4FD9A44B4B15595A5 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/lkpyramid.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+69A9D972899C4B708A17EA1C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/motempl.cpp */ = {isa = PBXBuildFile; fileRef = A954E3B6580444A4B9124DB3 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/motempl.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+CD9AC3F0814B4C52A5E0AAC4 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/opencl/bgfg_mog2.cl */ = {isa = PBXBuildFile; fileRef = 11D1326EBAE1488F8F335B81 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/opencl/bgfg_mog2.cl */; settings = { COMPILER_FLAGS = ""; }; };
+4D6203F856524FACB2DFF0CC /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/opencl/optical_flow_farneback.cl */ = {isa = PBXBuildFile; fileRef = 73B1F1BD5D994FEDB4916F46 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/opencl/optical_flow_farneback.cl */; settings = { COMPILER_FLAGS = ""; }; };
+D3500AB4A00C4BBE9BEB0885 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/opencl/optical_flow_tvl1.cl */ = {isa = PBXBuildFile; fileRef = A7AC0E7107BD427A9D8F5B78 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/opencl/optical_flow_tvl1.cl */; settings = { COMPILER_FLAGS = ""; }; };
+DFDC4CC205E6408FAE831B91 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/opencl/pyrlk.cl */ = {isa = PBXBuildFile; fileRef = 5476C1B76EC440A7B305F79E /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/opencl/pyrlk.cl */; settings = { COMPILER_FLAGS = ""; }; };
+6DF78B8E6D15403B9ACFFEBE /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/opencl/updatemotionhistory.cl */ = {isa = PBXBuildFile; fileRef = 83258A7F660A4A44B694C53C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/opencl/updatemotionhistory.cl */; settings = { COMPILER_FLAGS = ""; }; };
+EE783EA0FB5846B8AF7A7428 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/optflowgf.cpp */ = {isa = PBXBuildFile; fileRef = B87AADD05200419899EB1C4F /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/optflowgf.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+D550AFDA3D4146B3877054D4 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/precomp.hpp */ = {isa = PBXBuildFile; fileRef = 04B66F564194429087231DCC /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/precomp.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+46DBFDE638FE4556A7043C69 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/simpleflow.cpp */ = {isa = PBXBuildFile; fileRef = 5EBD6848525E4F6CB8010D0C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/simpleflow.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+73CB782AE8374B14A3A27984 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/tvl1flow.cpp */ = {isa = PBXBuildFile; fileRef = 4A05EDE83BB9428186A546AC /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/tvl1flow.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+27CB5E3E3A94464B86DED771 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/video_init.cpp */ = {isa = PBXBuildFile; fileRef = 8A3EFB8F0A804EDFB1EAE61E /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/video_init.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+              947F3D4446E641F582CDF896 /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              9B10887F15F7468D9959B314 /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              368966DFD0E24FEF95230AD8 /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              399030D60EB54BDE817B4A5E /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 1AC15BF44147442183F61625 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = FC9D11A818B147998B387CE9;
+                     remoteInfo = opencv_video;
+              };
+              F8673D03BB9B4B799C5A2C8D /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 1AC15BF44147442183F61625 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 9A95E36E5B04496F958C1BA7;
+                     remoteInfo = ZERO_CHECK;
+              };
+              D9C22F6991154108A564339B /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 1AC15BF44147442183F61625 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 3C2A2A4281C34C8EAC4B92F6;
+                     remoteInfo = ALL_BUILD;
+              };
+              DECD94E2881C4135B8DF29EE /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 1AC15BF44147442183F61625 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 9A95E36E5B04496F958C1BA7;
+                     remoteInfo = ZERO_CHECK;
+              };
+              E3CFF5F737704BA78894E327 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 1AC15BF44147442183F61625 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 3C2A2A4281C34C8EAC4B92F6;
+                     remoteInfo = ALL_BUILD;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+A1E2F3E19D2E4E58ADF4CAC0 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+0F280015CC334B38804E9994 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/cvconfig.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "cvconfig.h"; path = "../../../ios/build/iPhoneOS-armv7s/cvconfig.h"; sourceTree = SOURCE_ROOT; };
+4B823EDDE20040809FC6096B /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video/opencl_kernels.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "opencl_kernels.cpp"; path = "../../../ios/build/iPhoneOS-armv7s/modules/video/opencl_kernels.cpp"; sourceTree = SOURCE_ROOT; };
+14DBB6810B9F4FBFBE1E4140 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video/opencl_kernels.cpp.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "opencl_kernels.cpp.rule"; path = "../../../ios/build/iPhoneOS-armv7s/modules/video/opencl_kernels.cpp.rule"; sourceTree = SOURCE_ROOT; };
+9162A70DA2B145FFBF122560 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video/opencl_kernels.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "opencl_kernels.hpp"; path = "../../../ios/build/iPhoneOS-armv7s/modules/video/opencl_kernels.hpp"; sourceTree = SOURCE_ROOT; };
+EB9A031626E24861A7F05752 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/opencv2/opencv_modules.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "opencv_modules.hpp"; path = "../../../ios/build/iPhoneOS-armv7s/opencv2/opencv_modules.hpp"; sourceTree = SOURCE_ROOT; };
+29A7D70540614DB9949DA952 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/include/opencv2/video.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "video.hpp"; path = "include/opencv2/video.hpp"; sourceTree = SOURCE_ROOT; };
+8136494ED0434166BC989D9F /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/include/opencv2/video/background_segm.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "background_segm.hpp"; path = "include/opencv2/video/background_segm.hpp"; sourceTree = SOURCE_ROOT; };
+FB2961F7C53344DF9FB87890 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/include/opencv2/video/tracking.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "tracking.hpp"; path = "include/opencv2/video/tracking.hpp"; sourceTree = SOURCE_ROOT; };
+DDD93D48DC354DE9AEBE7BBB /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/include/opencv2/video/tracking_c.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "tracking_c.h"; path = "include/opencv2/video/tracking_c.h"; sourceTree = SOURCE_ROOT; };
+71395D4852CE4DADA0C0619A /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/include/opencv2/video/video.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "video.hpp"; path = "include/opencv2/video/video.hpp"; sourceTree = SOURCE_ROOT; };
+FCF20EAE4BB8424CA9B250A0 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/affineflow.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "affineflow.cpp"; path = "src/affineflow.cpp"; sourceTree = SOURCE_ROOT; };
+58F150621ED64297BB0A8D66 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/bgfg_KNN.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "bgfg_KNN.cpp"; path = "src/bgfg_KNN.cpp"; sourceTree = SOURCE_ROOT; };
+A6F8873121D94434979B2A17 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/bgfg_gaussmix.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "bgfg_gaussmix.cpp"; path = "src/bgfg_gaussmix.cpp"; sourceTree = SOURCE_ROOT; };
+713AC04009C7473284E29F94 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/bgfg_gaussmix2.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "bgfg_gaussmix2.cpp"; path = "src/bgfg_gaussmix2.cpp"; sourceTree = SOURCE_ROOT; };
+3B42464FCC774F2CA26B1CFF /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/bgfg_gmg.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "bgfg_gmg.cpp"; path = "src/bgfg_gmg.cpp"; sourceTree = SOURCE_ROOT; };
+F230340667A14B1DB78C9CCA /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/camshift.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "camshift.cpp"; path = "src/camshift.cpp"; sourceTree = SOURCE_ROOT; };
+C31D28236C594488A568A13D /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/compat_video.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "compat_video.cpp"; path = "src/compat_video.cpp"; sourceTree = SOURCE_ROOT; };
+D5032270182248F2BE9AF967 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/ecc.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "ecc.cpp"; path = "src/ecc.cpp"; sourceTree = SOURCE_ROOT; };
+564EEFD662FA4284A66C1D8C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/kalman.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "kalman.cpp"; path = "src/kalman.cpp"; sourceTree = SOURCE_ROOT; };
+7BB706A72DA944E39A9A5BF0 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/lkpyramid.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "lkpyramid.cpp"; path = "src/lkpyramid.cpp"; sourceTree = SOURCE_ROOT; };
+CF9FDAC4FD9A44B4B15595A5 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/lkpyramid.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "lkpyramid.hpp"; path = "src/lkpyramid.hpp"; sourceTree = SOURCE_ROOT; };
+A954E3B6580444A4B9124DB3 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/motempl.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "motempl.cpp"; path = "src/motempl.cpp"; sourceTree = SOURCE_ROOT; };
+11D1326EBAE1488F8F335B81 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/opencl/bgfg_mog2.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "bgfg_mog2.cl"; path = "src/opencl/bgfg_mog2.cl"; sourceTree = SOURCE_ROOT; };
+73B1F1BD5D994FEDB4916F46 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/opencl/optical_flow_farneback.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "optical_flow_farneback.cl"; path = "src/opencl/optical_flow_farneback.cl"; sourceTree = SOURCE_ROOT; };
+A7AC0E7107BD427A9D8F5B78 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/opencl/optical_flow_tvl1.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "optical_flow_tvl1.cl"; path = "src/opencl/optical_flow_tvl1.cl"; sourceTree = SOURCE_ROOT; };
+5476C1B76EC440A7B305F79E /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/opencl/pyrlk.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "pyrlk.cl"; path = "src/opencl/pyrlk.cl"; sourceTree = SOURCE_ROOT; };
+83258A7F660A4A44B694C53C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/opencl/updatemotionhistory.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "updatemotionhistory.cl"; path = "src/opencl/updatemotionhistory.cl"; sourceTree = SOURCE_ROOT; };
+B87AADD05200419899EB1C4F /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/optflowgf.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "optflowgf.cpp"; path = "src/optflowgf.cpp"; sourceTree = SOURCE_ROOT; };
+04B66F564194429087231DCC /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/precomp.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "precomp.hpp"; path = "src/precomp.hpp"; sourceTree = SOURCE_ROOT; };
+5EBD6848525E4F6CB8010D0C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/simpleflow.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "simpleflow.cpp"; path = "src/simpleflow.cpp"; sourceTree = SOURCE_ROOT; };
+4A05EDE83BB9428186A546AC /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/tvl1flow.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "tvl1flow.cpp"; path = "src/tvl1flow.cpp"; sourceTree = SOURCE_ROOT; };
+8A3EFB8F0A804EDFB1EAE61E /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/video_init.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "video_init.cpp"; path = "src/video_init.cpp"; sourceTree = SOURCE_ROOT; };
+63F8A4CB3DD14A95A600C80E /* opencv_video */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "libopencv_video.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              3C20B4DA54BD4C87A7637A4F  = {
+                     isa = PBXGroup;
+                     children = (
+                            EADEA033413F40F38EAA2974 /* Sources */,
+                            450B230D857140F7A660648C /* Resources */,
+                            24C7F53A1E6C48669EC3A110 /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              EADEA033413F40F38EAA2974 /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            E7A6269C7D9F4B17947D5A04 /* ALL_BUILD */,
+                            103022D7E12E47ECAEA87E2E /* ZERO_CHECK */,
+                            1E02FB7CB11E4FCDABD78554 /* modules */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              450B230D857140F7A660648C /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              E7A6269C7D9F4B17947D5A04 /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            C80276677C3F432B814972D5 /* CMake Rules */,
+                            A1E2F3E19D2E4E58ADF4CAC0 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              C80276677C3F432B814972D5 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              103022D7E12E47ECAEA87E2E /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            5A48492462F147A0A3467207 /* CMake Rules */,
+                            A1E2F3E19D2E4E58ADF4CAC0 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              5A48492462F147A0A3467207 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              1E02FB7CB11E4FCDABD78554 /* modules */ = {
+                     isa = PBXGroup;
+                     children = (
+                            382B5B32878945E5A660BD4C /* opencv_video */,
+                     );
+                     name = modules;
+                     sourceTree = "<group>";
+              };
+              382B5B32878945E5A660BD4C /* opencv_video */ = {
+                     isa = PBXGroup;
+                     children = (
+                            7CF79722BC62487593D0D6A8 /* Include */,
+                            11C53BFA4E9C42B3A9255489 /* Src */,
+                            2C9582B20F224FCA833C1FD5 /* Header Files */,
+                            E77AF872D1BC429D80762243 /* CMake Rules */,
+                            A1E2F3E19D2E4E58ADF4CAC0 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/CMakeLists.txt */,
+                     );
+                     name = opencv_video;
+                     sourceTree = "<group>";
+              };
+              7CF79722BC62487593D0D6A8 /* Include */ = {
+                     isa = PBXGroup;
+                     children = (
+                            262E6D26BA704FAAB214F7CE /* opencv2 */,
+                     );
+                     name = Include;
+                     sourceTree = "<group>";
+              };
+              262E6D26BA704FAAB214F7CE /* opencv2 */ = {
+                     isa = PBXGroup;
+                     children = (
+                            A28B33AFBC174210A73B9B6F /* video */,
+                            29A7D70540614DB9949DA952 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/include/opencv2/video.hpp */,
+                     );
+                     name = opencv2;
+                     sourceTree = "<group>";
+              };
+              A28B33AFBC174210A73B9B6F /* video */ = {
+                     isa = PBXGroup;
+                     children = (
+                            8136494ED0434166BC989D9F /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/include/opencv2/video/background_segm.hpp */,
+                            FB2961F7C53344DF9FB87890 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/include/opencv2/video/tracking.hpp */,
+                            DDD93D48DC354DE9AEBE7BBB /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/include/opencv2/video/tracking_c.h */,
+                            71395D4852CE4DADA0C0619A /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/include/opencv2/video/video.hpp */,
+                     );
+                     name = video;
+                     sourceTree = "<group>";
+              };
+              11C53BFA4E9C42B3A9255489 /* Src */ = {
+                     isa = PBXGroup;
+                     children = (
+                            326F73C7077340D6A84F208F /* opencl */,
+                            FCF20EAE4BB8424CA9B250A0 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/affineflow.cpp */,
+                            58F150621ED64297BB0A8D66 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/bgfg_KNN.cpp */,
+                            A6F8873121D94434979B2A17 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/bgfg_gaussmix.cpp */,
+                            713AC04009C7473284E29F94 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/bgfg_gaussmix2.cpp */,
+                            3B42464FCC774F2CA26B1CFF /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/bgfg_gmg.cpp */,
+                            F230340667A14B1DB78C9CCA /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/camshift.cpp */,
+                            C31D28236C594488A568A13D /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/compat_video.cpp */,
+                            D5032270182248F2BE9AF967 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/ecc.cpp */,
+                            564EEFD662FA4284A66C1D8C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/kalman.cpp */,
+                            7BB706A72DA944E39A9A5BF0 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/lkpyramid.cpp */,
+                            CF9FDAC4FD9A44B4B15595A5 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/lkpyramid.hpp */,
+                            A954E3B6580444A4B9124DB3 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/motempl.cpp */,
+                            B87AADD05200419899EB1C4F /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/optflowgf.cpp */,
+                            04B66F564194429087231DCC /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/precomp.hpp */,
+                            5EBD6848525E4F6CB8010D0C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/simpleflow.cpp */,
+                            4A05EDE83BB9428186A546AC /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/tvl1flow.cpp */,
+                            8A3EFB8F0A804EDFB1EAE61E /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/video_init.cpp */,
+                     );
+                     name = Src;
+                     sourceTree = "<group>";
+              };
+              326F73C7077340D6A84F208F /* opencl */ = {
+                     isa = PBXGroup;
+                     children = (
+                            F63C30E9AEA7455DB88A374A /* kernels */,
+                     );
+                     name = opencl;
+                     sourceTree = "<group>";
+              };
+              F63C30E9AEA7455DB88A374A /* kernels */ = {
+                     isa = PBXGroup;
+                     children = (
+                            05E079F63C8D4760ABAF25D2 /* autogenerated */,
+                            11D1326EBAE1488F8F335B81 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/opencl/bgfg_mog2.cl */,
+                            73B1F1BD5D994FEDB4916F46 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/opencl/optical_flow_farneback.cl */,
+                            A7AC0E7107BD427A9D8F5B78 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/opencl/optical_flow_tvl1.cl */,
+                            5476C1B76EC440A7B305F79E /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/opencl/pyrlk.cl */,
+                            83258A7F660A4A44B694C53C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/opencl/updatemotionhistory.cl */,
+                     );
+                     name = kernels;
+                     sourceTree = "<group>";
+              };
+              05E079F63C8D4760ABAF25D2 /* autogenerated */ = {
+                     isa = PBXGroup;
+                     children = (
+                            4B823EDDE20040809FC6096B /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video/opencl_kernels.cpp */,
+                            9162A70DA2B145FFBF122560 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video/opencl_kernels.hpp */,
+                     );
+                     name = autogenerated;
+                     sourceTree = "<group>";
+              };
+              2C9582B20F224FCA833C1FD5 /* Header Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            0F280015CC334B38804E9994 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/cvconfig.h */,
+                            EB9A031626E24861A7F05752 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/opencv2/opencv_modules.hpp */,
+                     );
+                     name = "Header Files";
+                     sourceTree = "<group>";
+              };
+              E77AF872D1BC429D80762243 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                            14DBB6810B9F4FBFBE1E4140 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video/opencl_kernels.cpp.rule */,
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              24C7F53A1E6C48669EC3A110 /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            63F8A4CB3DD14A95A600C80E /* opencv_video */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+              FC9D11A818B147998B387CE9 /* opencv_video */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = DE56B45C4D9E436B9CC1210A /* Build configuration list for PBXNativeTarget "opencv_video" */;
+                     buildPhases = (
+                            DD81C0FC68404989ACBEEA2D /* CMake Rules */,
+                            3517AE62EC1A4C60BDBFA3FA /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            4AE0898670AD4E439866B31B /* PBXTargetDependency */,
+                     );
+                     name = opencv_video;
+                     productName = opencv_video;
+                     productReference = 63F8A4CB3DD14A95A600C80E /* opencv_video */;
+                     productType = "com.apple.product-type.library.static";
+              };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+              1AC15BF44147442183F61625 /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = 59137F03CFBC4BC6AEFC05C1 /* Build configuration list for PBXProject  "opencv_video" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            9B10887F15F7468D9959B314 /* Debug */,
+                            368966DFD0E24FEF95230AD8 /* Release */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = 3C20B4DA54BD4C87A7637A4F;
+                     projectDirPath = /Users/kliment/Documents/CulturalGuide/opencv/modules/video;
+                     projectRoot = "";
+                     targets = (
+                            3C2A2A4281C34C8EAC4B92F6 /* ALL_BUILD */,
+                            9A95E36E5B04496F958C1BA7 /* ZERO_CHECK */,
+                            F42DADB33A10480396921E11 /* install */,
+                            FC9D11A818B147998B387CE9 /* opencv_video */,
+                            8FC03E3D524347F7857B77BA /* package */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              FDB1AD5EAC264224AC733023 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              CE8559DF583D450B93AB1F94 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video -f /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              EBAA32826E7540F396154FB6 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              12E3565B3C794958AD1A8512 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video -f /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              D26E2A5CC3524BE7832911B0 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              D187B0B4599E449D81673F0C /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video -f /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              DD81C0FC68404989ACBEEA2D /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video -f /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video/CMakeScripts/opencv_video_cmakeRulesBuildPhase.make$CONFIGURATION cmake_check_multiple_outputs all";
+                     showEnvVarsInLog = 0;
+              };
+              01BF7E3678D44E789C4E08D4 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              5C461AA428514856ADA8E7AC /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video -f /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+              3517AE62EC1A4C60BDBFA3FA /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            D905F0094DF7464AAF64D0D2 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video/opencl_kernels.cpp */,
+                            BFE26EC4EBB444118F51729F /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/affineflow.cpp */,
+                            728CDC09D09849669FFC005F /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/bgfg_KNN.cpp */,
+                            421F81FF022B4E068BC42D62 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/bgfg_gaussmix.cpp */,
+                            9EAB71C818B746C5AC4C863F /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/bgfg_gaussmix2.cpp */,
+                            3AD4AC1B2E234F77A9728D53 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/bgfg_gmg.cpp */,
+                            00039ED55C7C4E889DD01E59 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/camshift.cpp */,
+                            82CB75EBB33B4A1D9E0BA780 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/compat_video.cpp */,
+                            C8F642D1F66D49A6893357AC /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/ecc.cpp */,
+                            4317D925AFAC4313AA3533ED /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/kalman.cpp */,
+                            7892520B87524A29A29B1E8F /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/lkpyramid.cpp */,
+                            69A9D972899C4B708A17EA1C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/motempl.cpp */,
+                            EE783EA0FB5846B8AF7A7428 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/optflowgf.cpp */,
+                            46DBFDE638FE4556A7043C69 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/simpleflow.cpp */,
+                            73CB782AE8374B14A3A27984 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/tvl1flow.cpp */,
+                            27CB5E3E3A94464B86DED771 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src/video_init.cpp */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              062BF3BEF4BB4289BF56FA5F /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = FC9D11A818B147998B387CE9 /* opencv_video */;
+                     targetProxy = 399030D60EB54BDE817B4A5E /* PBXContainerItemProxy */;
+              };
+              127CFE3285154EAF87B23789 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 9A95E36E5B04496F958C1BA7 /* ZERO_CHECK */;
+                     targetProxy = F8673D03BB9B4B799C5A2C8D /* PBXContainerItemProxy */;
+              };
+              EBA4830228E44939A1F1F7E0 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 3C2A2A4281C34C8EAC4B92F6 /* ALL_BUILD */;
+                     targetProxy = D9C22F6991154108A564339B /* PBXContainerItemProxy */;
+              };
+              4AE0898670AD4E439866B31B /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 9A95E36E5B04496F958C1BA7 /* ZERO_CHECK */;
+                     targetProxy = DECD94E2881C4135B8DF29EE /* PBXContainerItemProxy */;
+              };
+              7490D362455A4B21974893F4 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 3C2A2A4281C34C8EAC4B92F6 /* ALL_BUILD */;
+                     targetProxy = E3CFF5F737704BA78894E327 /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              FC5E3BD0324D4584B8EB204E /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video/build";
+                     };
+                     name = Debug;
+              };
+              EBDFF689069B4BC08F9BF2F6 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video/build";
+                     };
+                     name = Release;
+              };
+              7F5A87D73EA5449F86BE8075 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video", /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/video/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              B49DFF8D8F9D4ED6A9AA2022 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video", /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/video/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              9A553379F390493F8CC800B9 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video", /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/video/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              34637A6D50D94A82A5657B1A /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video", /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/video/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              EBE24D6BDA96472DB0CD92B2 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video", /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/video/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              6113E6DBABF64312B3E2273C /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video", /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/video/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              5986050663F54E6E94EDAA98 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/lib/Debug";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", OPENCV_NOSTL, "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video", /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/video/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC           -DDEBUG -D_DEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "-stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC           -DDEBUG -D_DEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = opencv_video;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              E881AB4866F94BAC9E8E5489 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/lib/Release";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", OPENCV_NOSTL, "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video", /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/video/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC       -DNDEBUG  -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "-stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC   -DNDEBUG     -fomit-frame-pointer -ffast-math  -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = opencv_video;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              11FE230E72EE461EB36255F7 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video", /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/video/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              C1842BCB747E479EACED1CD0 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video", /Users/kliment/Documents/CulturalGuide/opencv/modules/video/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/video/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneOS-armv7s/modules/video";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              59137F03CFBC4BC6AEFC05C1 /* Build configuration list for PBXProject  "opencv_video" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            FC5E3BD0324D4584B8EB204E /* Debug */,
+                            EBDFF689069B4BC08F9BF2F6 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              503CFA214DFC4DA5A7527711 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            7F5A87D73EA5449F86BE8075 /* Debug */,
+                            B49DFF8D8F9D4ED6A9AA2022 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              AE3B047ED7C94126B1AED93C /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            9A553379F390493F8CC800B9 /* Debug */,
+                            34637A6D50D94A82A5657B1A /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              2D2D4D2DE6454A9A85880BB7 /* Build configuration list for PBXAggregateTarget "install" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            EBE24D6BDA96472DB0CD92B2 /* Debug */,
+                            6113E6DBABF64312B3E2273C /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              DE56B45C4D9E436B9CC1210A /* Build configuration list for PBXNativeTarget "opencv_video" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            5986050663F54E6E94EDAA98 /* Debug */,
+                            E881AB4866F94BAC9E8E5489 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              3407FA28861443D8A33A01D7 /* Build configuration list for PBXAggregateTarget "package" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            11FE230E72EE461EB36255F7 /* Debug */,
+                            C1842BCB747E479EACED1CD0 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = 1AC15BF44147442183F61625;
+}

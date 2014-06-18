@@ -1,0 +1,940 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              E14F8871FA7941C7BBFA1948 /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = FEC9A77B1A1B4DD592ED100C /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            E32C5B41182040E5ABD26D17 /* CMake Rules */,
+                     );
+                     dependencies = (
+                            40B95DBF693347248AD1D32F /* PBXTargetDependency */,
+                            A030A006C63B4798A19B1C0B /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              740214CE20FF4D3495704414 /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 8F5832D6D43E460DBDF3702E /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            54A57C17A3B7402E89B8BD4E /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+              592121C63EAD45699722C963 /* install */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 12C87C7C8459492DB1CFEED9 /* Build configuration list for PBXAggregateTarget "install" */;
+                     buildPhases = (
+                            AE51E5A1790146C5AA608F16 /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            916A1DD26BAA47FFB9E6A744 /* PBXTargetDependency */,
+                     );
+                     name = install;
+                     productName = install;
+              };
+              EC63FD160FCC4FACB3EBB304 /* package */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = FE856D4C83FC4D84913F7D1E /* Build configuration list for PBXAggregateTarget "package" */;
+                     buildPhases = (
+                            7B6C256115B14E75824F66AA /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            E2ACACDFA8B04FC6B82CE310 /* PBXTargetDependency */,
+                     );
+                     name = package;
+                     productName = package;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+9967F138D4544F29A31D5C77 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/cvconfig.h */ = {isa = PBXBuildFile; fileRef = 1360A807382849DA8E1079C8 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/cvconfig.h */; settings = { COMPILER_FLAGS = ""; }; };
+0C92A1A075214969973E11EF /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d/opencl_kernels.cpp */ = {isa = PBXBuildFile; fileRef = 3CAB5A0985794936BCE0A40C /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d/opencl_kernels.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+B891F529B3F9442A9B7A0325 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d/opencl_kernels.cpp.rule */ = {isa = PBXBuildFile; fileRef = C3576BBF6EC943EAA8607E93 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d/opencl_kernels.cpp.rule */; settings = { COMPILER_FLAGS = ""; }; };
+55ACD6D096004DF1B0797232 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d/opencl_kernels.hpp */ = {isa = PBXBuildFile; fileRef = E1CF1CCE5F894967BE78C342 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d/opencl_kernels.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+79380EC1616C4EEB8E2E22BE /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/opencv2/opencv_modules.hpp */ = {isa = PBXBuildFile; fileRef = 4D77A14E0A724734930CD2C7 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/opencv2/opencv_modules.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+9E7A786FDA6A4C9898426F67 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 7D7A269B0372471CAAB64473 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+AB34AEE4F6F34D9CBDC389EE /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/include/opencv2/calib3d.hpp */ = {isa = PBXBuildFile; fileRef = 68CC9A9BBC2E4391B9C59F91 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/include/opencv2/calib3d.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+F5E21EE819D840AB968A129F /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/include/opencv2/calib3d/calib3d.hpp */ = {isa = PBXBuildFile; fileRef = 882C6D2CB51D4B30A364FE90 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/include/opencv2/calib3d/calib3d.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+760A5A70E0F54636B4E09ACA /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/include/opencv2/calib3d/calib3d_c.h */ = {isa = PBXBuildFile; fileRef = 5DE362C6C63F47FFBDA3E31D /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/include/opencv2/calib3d/calib3d_c.h */; settings = { COMPILER_FLAGS = ""; }; };
+96A2D1CA9772446985B63848 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/calib3d_init.cpp */ = {isa = PBXBuildFile; fileRef = 283E8A984C1D4109A4421E90 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/calib3d_init.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+47A929528F894043B875D111 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/calibinit.cpp */ = {isa = PBXBuildFile; fileRef = 1D007A00560E402F944FF9B8 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/calibinit.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+9F8998EA1549485AA9FB79F1 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/calibration.cpp */ = {isa = PBXBuildFile; fileRef = 7843A81A5C5B40BE8873FAEE /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/calibration.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+87F2EA6CADB3449FBC1ED515 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/checkchessboard.cpp */ = {isa = PBXBuildFile; fileRef = D09A12D0AB2443CF9B769A47 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/checkchessboard.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+F3AD1D33CAD94EF4B23B987F /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/circlesgrid.cpp */ = {isa = PBXBuildFile; fileRef = 2DB2BC4F0A294790BAFD95B1 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/circlesgrid.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+9641C535493F4AC0ACC67D69 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/circlesgrid.hpp */ = {isa = PBXBuildFile; fileRef = 1BA6FD341DE444A69526D25C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/circlesgrid.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+B8CBEF6E9C1244C0A8B9E883 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/compat_ptsetreg.cpp */ = {isa = PBXBuildFile; fileRef = 7D2C8B2CE49A4297803D5632 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/compat_ptsetreg.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+16F177B9F045400CBD636BAE /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/compat_stereo.cpp */ = {isa = PBXBuildFile; fileRef = 9275668C75CD40EEA30F6BCB /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/compat_stereo.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+64AF34B954CF482986292924 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/epnp.cpp */ = {isa = PBXBuildFile; fileRef = 192D34822AD1455591640FAD /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/epnp.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+E7B7BF771B734C269936C12A /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/epnp.h */ = {isa = PBXBuildFile; fileRef = E1B94FBEE7414B71805980E2 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/epnp.h */; settings = { COMPILER_FLAGS = ""; }; };
+FA34A3B8F1B34C81B9C2620C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/five-point.cpp */ = {isa = PBXBuildFile; fileRef = 71739E7A1406491695007866 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/five-point.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+06F7DAB92C544CE7B62702ED /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/fundam.cpp */ = {isa = PBXBuildFile; fileRef = 0E8D0944E69744DDB5F6D673 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/fundam.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+5CA00741C5A14C4E85F88E6B /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/levmarq.cpp */ = {isa = PBXBuildFile; fileRef = 5442F4E2454846BD8F0D0D09 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/levmarq.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+E3171FAE41C2404C92AF3C40 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/opencl/stereobm.cl */ = {isa = PBXBuildFile; fileRef = CEEBBE36F985489EBFA090DF /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/opencl/stereobm.cl */; settings = { COMPILER_FLAGS = ""; }; };
+0E17748CB11A430FB728A5FF /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/p3p.cpp */ = {isa = PBXBuildFile; fileRef = 150E8EBC4AAA46F79D340D07 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/p3p.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+C56DD50A57E54D158B6C55F8 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/p3p.h */ = {isa = PBXBuildFile; fileRef = 494426EC60A24212B59AA11D /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/p3p.h */; settings = { COMPILER_FLAGS = ""; }; };
+600433FA24D041B291C93D7A /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/polynom_solver.cpp */ = {isa = PBXBuildFile; fileRef = F380AB46C4DD4079ABCE7258 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/polynom_solver.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+95697D3F1BF641DBAE9D65CF /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/polynom_solver.h */ = {isa = PBXBuildFile; fileRef = 2E75217DE0ED45D1A553A536 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/polynom_solver.h */; settings = { COMPILER_FLAGS = ""; }; };
+5F464BC8546A4644A108E9A3 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/posit.cpp */ = {isa = PBXBuildFile; fileRef = 8270E5590A4B405182274CC7 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/posit.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+F94CC69056454E488FA8B8EF /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/precomp.hpp */ = {isa = PBXBuildFile; fileRef = 9C89BF5EF88B4DD48B54EA28 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/precomp.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+F9B330CDE9154F51A84D3200 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/ptsetreg.cpp */ = {isa = PBXBuildFile; fileRef = 1C9A9EAB7B8145008A29ED67 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/ptsetreg.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+2FAD6D5A3EBF4F648AC3C774 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/quadsubpix.cpp */ = {isa = PBXBuildFile; fileRef = C9CFA18B29AC432A8E0EAD5C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/quadsubpix.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+912C9F94EFC944D3BCBCD4BC /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/solvepnp.cpp */ = {isa = PBXBuildFile; fileRef = A7994720EE5F486EBDB561C5 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/solvepnp.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+47D480C25E0A4A2DBC0934A4 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/stereobm.cpp */ = {isa = PBXBuildFile; fileRef = 120AA9F136594DFBB4FFAB67 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/stereobm.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+DD7608BBF2C24DE29C25A372 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/stereosgbm.cpp */ = {isa = PBXBuildFile; fileRef = C28F73BCF7834F758BE55629 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/stereosgbm.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+72178D2F078B4626970F6A44 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/triangulate.cpp */ = {isa = PBXBuildFile; fileRef = 974AFAFFC87B4398AE041DE6 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/triangulate.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+              8109EA74C6BB44AE8C4CA14B /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              FDE55AFE1FC14854A21DF1C7 /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              3F9CB03B5A654CD28410CD0E /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              1866484653E041E5B1124BBF /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 5CBD56B296624246945BED2E /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 9929AA29B766422A877E0B59;
+                     remoteInfo = opencv_calib3d;
+              };
+              164073CC7D7A4E7A88D3FD9E /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 5CBD56B296624246945BED2E /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 740214CE20FF4D3495704414;
+                     remoteInfo = ZERO_CHECK;
+              };
+              575890B602EC437FB7776B03 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 5CBD56B296624246945BED2E /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = E14F8871FA7941C7BBFA1948;
+                     remoteInfo = ALL_BUILD;
+              };
+              C52AE748949341B6AF7FF041 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 5CBD56B296624246945BED2E /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 740214CE20FF4D3495704414;
+                     remoteInfo = ZERO_CHECK;
+              };
+              945354B147504259971F3711 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 5CBD56B296624246945BED2E /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = E14F8871FA7941C7BBFA1948;
+                     remoteInfo = ALL_BUILD;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+7D7A269B0372471CAAB64473 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+1360A807382849DA8E1079C8 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/cvconfig.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "cvconfig.h"; path = "../../../ios/build/iPhoneSimulator-i386/cvconfig.h"; sourceTree = SOURCE_ROOT; };
+3CAB5A0985794936BCE0A40C /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d/opencl_kernels.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "opencl_kernels.cpp"; path = "../../../ios/build/iPhoneSimulator-i386/modules/calib3d/opencl_kernels.cpp"; sourceTree = SOURCE_ROOT; };
+C3576BBF6EC943EAA8607E93 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d/opencl_kernels.cpp.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "opencl_kernels.cpp.rule"; path = "../../../ios/build/iPhoneSimulator-i386/modules/calib3d/opencl_kernels.cpp.rule"; sourceTree = SOURCE_ROOT; };
+E1CF1CCE5F894967BE78C342 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d/opencl_kernels.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "opencl_kernels.hpp"; path = "../../../ios/build/iPhoneSimulator-i386/modules/calib3d/opencl_kernels.hpp"; sourceTree = SOURCE_ROOT; };
+4D77A14E0A724734930CD2C7 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/opencv2/opencv_modules.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "opencv_modules.hpp"; path = "../../../ios/build/iPhoneSimulator-i386/opencv2/opencv_modules.hpp"; sourceTree = SOURCE_ROOT; };
+68CC9A9BBC2E4391B9C59F91 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/include/opencv2/calib3d.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "calib3d.hpp"; path = "include/opencv2/calib3d.hpp"; sourceTree = SOURCE_ROOT; };
+882C6D2CB51D4B30A364FE90 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/include/opencv2/calib3d/calib3d.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "calib3d.hpp"; path = "include/opencv2/calib3d/calib3d.hpp"; sourceTree = SOURCE_ROOT; };
+5DE362C6C63F47FFBDA3E31D /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/include/opencv2/calib3d/calib3d_c.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "calib3d_c.h"; path = "include/opencv2/calib3d/calib3d_c.h"; sourceTree = SOURCE_ROOT; };
+283E8A984C1D4109A4421E90 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/calib3d_init.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "calib3d_init.cpp"; path = "src/calib3d_init.cpp"; sourceTree = SOURCE_ROOT; };
+1D007A00560E402F944FF9B8 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/calibinit.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "calibinit.cpp"; path = "src/calibinit.cpp"; sourceTree = SOURCE_ROOT; };
+7843A81A5C5B40BE8873FAEE /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/calibration.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "calibration.cpp"; path = "src/calibration.cpp"; sourceTree = SOURCE_ROOT; };
+D09A12D0AB2443CF9B769A47 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/checkchessboard.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "checkchessboard.cpp"; path = "src/checkchessboard.cpp"; sourceTree = SOURCE_ROOT; };
+2DB2BC4F0A294790BAFD95B1 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/circlesgrid.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "circlesgrid.cpp"; path = "src/circlesgrid.cpp"; sourceTree = SOURCE_ROOT; };
+1BA6FD341DE444A69526D25C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/circlesgrid.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "circlesgrid.hpp"; path = "src/circlesgrid.hpp"; sourceTree = SOURCE_ROOT; };
+7D2C8B2CE49A4297803D5632 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/compat_ptsetreg.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "compat_ptsetreg.cpp"; path = "src/compat_ptsetreg.cpp"; sourceTree = SOURCE_ROOT; };
+9275668C75CD40EEA30F6BCB /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/compat_stereo.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "compat_stereo.cpp"; path = "src/compat_stereo.cpp"; sourceTree = SOURCE_ROOT; };
+192D34822AD1455591640FAD /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/epnp.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "epnp.cpp"; path = "src/epnp.cpp"; sourceTree = SOURCE_ROOT; };
+E1B94FBEE7414B71805980E2 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/epnp.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "epnp.h"; path = "src/epnp.h"; sourceTree = SOURCE_ROOT; };
+71739E7A1406491695007866 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/five-point.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "five-point.cpp"; path = "src/five-point.cpp"; sourceTree = SOURCE_ROOT; };
+0E8D0944E69744DDB5F6D673 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/fundam.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "fundam.cpp"; path = "src/fundam.cpp"; sourceTree = SOURCE_ROOT; };
+5442F4E2454846BD8F0D0D09 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/levmarq.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "levmarq.cpp"; path = "src/levmarq.cpp"; sourceTree = SOURCE_ROOT; };
+CEEBBE36F985489EBFA090DF /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/opencl/stereobm.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "stereobm.cl"; path = "src/opencl/stereobm.cl"; sourceTree = SOURCE_ROOT; };
+150E8EBC4AAA46F79D340D07 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/p3p.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "p3p.cpp"; path = "src/p3p.cpp"; sourceTree = SOURCE_ROOT; };
+494426EC60A24212B59AA11D /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/p3p.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "p3p.h"; path = "src/p3p.h"; sourceTree = SOURCE_ROOT; };
+F380AB46C4DD4079ABCE7258 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/polynom_solver.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "polynom_solver.cpp"; path = "src/polynom_solver.cpp"; sourceTree = SOURCE_ROOT; };
+2E75217DE0ED45D1A553A536 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/polynom_solver.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "polynom_solver.h"; path = "src/polynom_solver.h"; sourceTree = SOURCE_ROOT; };
+8270E5590A4B405182274CC7 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/posit.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "posit.cpp"; path = "src/posit.cpp"; sourceTree = SOURCE_ROOT; };
+9C89BF5EF88B4DD48B54EA28 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/precomp.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "precomp.hpp"; path = "src/precomp.hpp"; sourceTree = SOURCE_ROOT; };
+1C9A9EAB7B8145008A29ED67 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/ptsetreg.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "ptsetreg.cpp"; path = "src/ptsetreg.cpp"; sourceTree = SOURCE_ROOT; };
+C9CFA18B29AC432A8E0EAD5C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/quadsubpix.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "quadsubpix.cpp"; path = "src/quadsubpix.cpp"; sourceTree = SOURCE_ROOT; };
+A7994720EE5F486EBDB561C5 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/solvepnp.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "solvepnp.cpp"; path = "src/solvepnp.cpp"; sourceTree = SOURCE_ROOT; };
+120AA9F136594DFBB4FFAB67 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/stereobm.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "stereobm.cpp"; path = "src/stereobm.cpp"; sourceTree = SOURCE_ROOT; };
+C28F73BCF7834F758BE55629 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/stereosgbm.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "stereosgbm.cpp"; path = "src/stereosgbm.cpp"; sourceTree = SOURCE_ROOT; };
+974AFAFFC87B4398AE041DE6 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/triangulate.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "triangulate.cpp"; path = "src/triangulate.cpp"; sourceTree = SOURCE_ROOT; };
+A408449F3FE6461888453082 /* opencv_calib3d */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "libopencv_calib3d.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              46D219C26B4E4999B016A751  = {
+                     isa = PBXGroup;
+                     children = (
+                            386B8BE1001C40CD99C87134 /* Sources */,
+                            ECC859D8B8494759AB2E1128 /* Resources */,
+                            1FC3368A08474979BAC939BC /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              386B8BE1001C40CD99C87134 /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            639FED7FD27D4F6EB8226E30 /* ALL_BUILD */,
+                            0DD05F243F06406288FFBEA7 /* ZERO_CHECK */,
+                            C8022A8A5E15488C85D93BC3 /* modules */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              ECC859D8B8494759AB2E1128 /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              639FED7FD27D4F6EB8226E30 /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            AC2B288E208C4A76BB8B7ECB /* CMake Rules */,
+                            7D7A269B0372471CAAB64473 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              AC2B288E208C4A76BB8B7ECB /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              0DD05F243F06406288FFBEA7 /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            97008807F2644927B5B05B0B /* CMake Rules */,
+                            7D7A269B0372471CAAB64473 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              97008807F2644927B5B05B0B /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              C8022A8A5E15488C85D93BC3 /* modules */ = {
+                     isa = PBXGroup;
+                     children = (
+                            7A91350212B544C2A0D6B4EC /* opencv_calib3d */,
+                     );
+                     name = modules;
+                     sourceTree = "<group>";
+              };
+              7A91350212B544C2A0D6B4EC /* opencv_calib3d */ = {
+                     isa = PBXGroup;
+                     children = (
+                            5E18F100B00E49A6989EE3DC /* Include */,
+                            2A8782EC5A8547AC845FAA10 /* Src */,
+                            B1771A78A3374310996AD743 /* Header Files */,
+                            BB7252EB22024A8885D7499F /* CMake Rules */,
+                            7D7A269B0372471CAAB64473 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/CMakeLists.txt */,
+                     );
+                     name = opencv_calib3d;
+                     sourceTree = "<group>";
+              };
+              5E18F100B00E49A6989EE3DC /* Include */ = {
+                     isa = PBXGroup;
+                     children = (
+                            65B4229A8C504AC2BCC4107D /* opencv2 */,
+                     );
+                     name = Include;
+                     sourceTree = "<group>";
+              };
+              65B4229A8C504AC2BCC4107D /* opencv2 */ = {
+                     isa = PBXGroup;
+                     children = (
+                            7BFDC14B364D431AAABD8E5B /* calib3d */,
+                            68CC9A9BBC2E4391B9C59F91 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/include/opencv2/calib3d.hpp */,
+                     );
+                     name = opencv2;
+                     sourceTree = "<group>";
+              };
+              7BFDC14B364D431AAABD8E5B /* calib3d */ = {
+                     isa = PBXGroup;
+                     children = (
+                            882C6D2CB51D4B30A364FE90 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/include/opencv2/calib3d/calib3d.hpp */,
+                            5DE362C6C63F47FFBDA3E31D /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/include/opencv2/calib3d/calib3d_c.h */,
+                     );
+                     name = calib3d;
+                     sourceTree = "<group>";
+              };
+              2A8782EC5A8547AC845FAA10 /* Src */ = {
+                     isa = PBXGroup;
+                     children = (
+                            28EC508C7E5846E98F463255 /* opencl */,
+                            283E8A984C1D4109A4421E90 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/calib3d_init.cpp */,
+                            1D007A00560E402F944FF9B8 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/calibinit.cpp */,
+                            7843A81A5C5B40BE8873FAEE /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/calibration.cpp */,
+                            D09A12D0AB2443CF9B769A47 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/checkchessboard.cpp */,
+                            2DB2BC4F0A294790BAFD95B1 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/circlesgrid.cpp */,
+                            1BA6FD341DE444A69526D25C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/circlesgrid.hpp */,
+                            7D2C8B2CE49A4297803D5632 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/compat_ptsetreg.cpp */,
+                            9275668C75CD40EEA30F6BCB /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/compat_stereo.cpp */,
+                            192D34822AD1455591640FAD /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/epnp.cpp */,
+                            E1B94FBEE7414B71805980E2 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/epnp.h */,
+                            71739E7A1406491695007866 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/five-point.cpp */,
+                            0E8D0944E69744DDB5F6D673 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/fundam.cpp */,
+                            5442F4E2454846BD8F0D0D09 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/levmarq.cpp */,
+                            150E8EBC4AAA46F79D340D07 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/p3p.cpp */,
+                            494426EC60A24212B59AA11D /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/p3p.h */,
+                            F380AB46C4DD4079ABCE7258 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/polynom_solver.cpp */,
+                            2E75217DE0ED45D1A553A536 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/polynom_solver.h */,
+                            8270E5590A4B405182274CC7 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/posit.cpp */,
+                            9C89BF5EF88B4DD48B54EA28 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/precomp.hpp */,
+                            1C9A9EAB7B8145008A29ED67 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/ptsetreg.cpp */,
+                            C9CFA18B29AC432A8E0EAD5C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/quadsubpix.cpp */,
+                            A7994720EE5F486EBDB561C5 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/solvepnp.cpp */,
+                            120AA9F136594DFBB4FFAB67 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/stereobm.cpp */,
+                            C28F73BCF7834F758BE55629 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/stereosgbm.cpp */,
+                            974AFAFFC87B4398AE041DE6 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/triangulate.cpp */,
+                     );
+                     name = Src;
+                     sourceTree = "<group>";
+              };
+              28EC508C7E5846E98F463255 /* opencl */ = {
+                     isa = PBXGroup;
+                     children = (
+                            B4DD783818C84989A93E0ED9 /* kernels */,
+                     );
+                     name = opencl;
+                     sourceTree = "<group>";
+              };
+              B4DD783818C84989A93E0ED9 /* kernels */ = {
+                     isa = PBXGroup;
+                     children = (
+                            C593C9343B8D427396A68B0F /* autogenerated */,
+                            CEEBBE36F985489EBFA090DF /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/opencl/stereobm.cl */,
+                     );
+                     name = kernels;
+                     sourceTree = "<group>";
+              };
+              C593C9343B8D427396A68B0F /* autogenerated */ = {
+                     isa = PBXGroup;
+                     children = (
+                            3CAB5A0985794936BCE0A40C /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d/opencl_kernels.cpp */,
+                            E1CF1CCE5F894967BE78C342 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d/opencl_kernels.hpp */,
+                     );
+                     name = autogenerated;
+                     sourceTree = "<group>";
+              };
+              B1771A78A3374310996AD743 /* Header Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            1360A807382849DA8E1079C8 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/cvconfig.h */,
+                            4D77A14E0A724734930CD2C7 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/opencv2/opencv_modules.hpp */,
+                     );
+                     name = "Header Files";
+                     sourceTree = "<group>";
+              };
+              BB7252EB22024A8885D7499F /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                            C3576BBF6EC943EAA8607E93 /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d/opencl_kernels.cpp.rule */,
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              1FC3368A08474979BAC939BC /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            A408449F3FE6461888453082 /* opencv_calib3d */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+              9929AA29B766422A877E0B59 /* opencv_calib3d */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = 6D78DF5EA6874F76A4202B7F /* Build configuration list for PBXNativeTarget "opencv_calib3d" */;
+                     buildPhases = (
+                            2700ACE6485048F79389B775 /* CMake Rules */,
+                            4D59D04233FF4041BE474C77 /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            9A22BDA333B44D218F99A260 /* PBXTargetDependency */,
+                     );
+                     name = opencv_calib3d;
+                     productName = opencv_calib3d;
+                     productReference = A408449F3FE6461888453082 /* opencv_calib3d */;
+                     productType = "com.apple.product-type.library.static";
+              };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+              5CBD56B296624246945BED2E /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = 00C69EC0907B45EB8B34A2D3 /* Build configuration list for PBXProject  "opencv_calib3d" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            FDE55AFE1FC14854A21DF1C7 /* Debug */,
+                            3F9CB03B5A654CD28410CD0E /* Release */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = 46D219C26B4E4999B016A751;
+                     projectDirPath = /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d;
+                     projectRoot = "";
+                     targets = (
+                            E14F8871FA7941C7BBFA1948 /* ALL_BUILD */,
+                            740214CE20FF4D3495704414 /* ZERO_CHECK */,
+                            592121C63EAD45699722C963 /* install */,
+                            9929AA29B766422A877E0B59 /* opencv_calib3d */,
+                            EC63FD160FCC4FACB3EBB304 /* package */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              7B3CA9735EFB42C2A46AF358 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              E32C5B41182040E5ABD26D17 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d -f /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              71D1956381B344BB9D40EB34 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              54A57C17A3B7402E89B8BD4E /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d -f /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              5440A52BC26840B09A587C2F /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              AE51E5A1790146C5AA608F16 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d -f /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              2700ACE6485048F79389B775 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d -f /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d/CMakeScripts/opencv_calib3d_cmakeRulesBuildPhase.make$CONFIGURATION cmake_check_multiple_outputs all";
+                     showEnvVarsInLog = 0;
+              };
+              05281EF3F4A24D3E804064EC /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              7B6C256115B14E75824F66AA /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d -f /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+              4D59D04233FF4041BE474C77 /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            0C92A1A075214969973E11EF /* /Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d/opencl_kernels.cpp */,
+                            96A2D1CA9772446985B63848 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/calib3d_init.cpp */,
+                            47A929528F894043B875D111 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/calibinit.cpp */,
+                            9F8998EA1549485AA9FB79F1 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/calibration.cpp */,
+                            87F2EA6CADB3449FBC1ED515 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/checkchessboard.cpp */,
+                            F3AD1D33CAD94EF4B23B987F /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/circlesgrid.cpp */,
+                            B8CBEF6E9C1244C0A8B9E883 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/compat_ptsetreg.cpp */,
+                            16F177B9F045400CBD636BAE /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/compat_stereo.cpp */,
+                            64AF34B954CF482986292924 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/epnp.cpp */,
+                            FA34A3B8F1B34C81B9C2620C /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/five-point.cpp */,
+                            06F7DAB92C544CE7B62702ED /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/fundam.cpp */,
+                            5CA00741C5A14C4E85F88E6B /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/levmarq.cpp */,
+                            0E17748CB11A430FB728A5FF /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/p3p.cpp */,
+                            600433FA24D041B291C93D7A /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/polynom_solver.cpp */,
+                            5F464BC8546A4644A108E9A3 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/posit.cpp */,
+                            F9B330CDE9154F51A84D3200 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/ptsetreg.cpp */,
+                            2FAD6D5A3EBF4F648AC3C774 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/quadsubpix.cpp */,
+                            912C9F94EFC944D3BCBCD4BC /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/solvepnp.cpp */,
+                            47D480C25E0A4A2DBC0934A4 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/stereobm.cpp */,
+                            DD7608BBF2C24DE29C25A372 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/stereosgbm.cpp */,
+                            72178D2F078B4626970F6A44 /* /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src/triangulate.cpp */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              40B95DBF693347248AD1D32F /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 9929AA29B766422A877E0B59 /* opencv_calib3d */;
+                     targetProxy = 1866484653E041E5B1124BBF /* PBXContainerItemProxy */;
+              };
+              A030A006C63B4798A19B1C0B /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 740214CE20FF4D3495704414 /* ZERO_CHECK */;
+                     targetProxy = 164073CC7D7A4E7A88D3FD9E /* PBXContainerItemProxy */;
+              };
+              916A1DD26BAA47FFB9E6A744 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = E14F8871FA7941C7BBFA1948 /* ALL_BUILD */;
+                     targetProxy = 575890B602EC437FB7776B03 /* PBXContainerItemProxy */;
+              };
+              9A22BDA333B44D218F99A260 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 740214CE20FF4D3495704414 /* ZERO_CHECK */;
+                     targetProxy = C52AE748949341B6AF7FF041 /* PBXContainerItemProxy */;
+              };
+              E2ACACDFA8B04FC6B82CE310 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = E14F8871FA7941C7BBFA1948 /* ALL_BUILD */;
+                     targetProxy = 945354B147504259971F3711 /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              00739009AB4A4583B06CDA1F /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d/build";
+                     };
+                     name = Debug;
+              };
+              A1D0C4E026394DB6B465EEA0 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d/build";
+                     };
+                     name = Release;
+              };
+              9E417F98060843C8B061F460 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/features2d/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/highgui/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/flann/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d", /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              48D064AF4B844D65B311E7F6 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/features2d/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/highgui/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/flann/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d", /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              82E0F6482BA04B81B80B2F41 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/features2d/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/highgui/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/flann/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d", /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              1BD57EEA11584D1C8D03D8F2 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/features2d/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/highgui/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/flann/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d", /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              1DE2DAA23E904AD2B265E465 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/features2d/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/highgui/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/flann/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d", /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              1C5062E065C0419BA73AB662 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/features2d/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/highgui/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/flann/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d", /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              D43FF843CE4645E1A1915BD6 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/lib/Debug";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", OPENCV_NOSTL, "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/features2d/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/highgui/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/flann/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d", /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC           -DDEBUG -D_DEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "-stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC           -DDEBUG -D_DEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = opencv_calib3d;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              6BC5514CF200404E8A85BC4B /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/lib/Release";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", OPENCV_NOSTL, "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/features2d/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/highgui/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/flann/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d", /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC       -DNDEBUG  -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "-stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC   -DNDEBUG     -fomit-frame-pointer -ffast-math  -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = opencv_calib3d;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              409E92F431764135B10A7228 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/features2d/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/highgui/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/flann/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d", /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              14AC4D66B73E4FC0BA13FF56 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/kliment/Documents/CulturalGuide/opencv/modules/features2d/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/highgui/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/imgproc/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/flann/include, /Users/kliment/Documents/CulturalGuide/opencv/modules/core/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d", /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/src, /Users/kliment/Documents/CulturalGuide/opencv/modules/calib3d/include, "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/kliment/Documents/CulturalGuide/ios/build/iPhoneSimulator-i386/modules/calib3d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              00C69EC0907B45EB8B34A2D3 /* Build configuration list for PBXProject  "opencv_calib3d" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            00739009AB4A4583B06CDA1F /* Debug */,
+                            A1D0C4E026394DB6B465EEA0 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              FEC9A77B1A1B4DD592ED100C /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            9E417F98060843C8B061F460 /* Debug */,
+                            48D064AF4B844D65B311E7F6 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              8F5832D6D43E460DBDF3702E /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            82E0F6482BA04B81B80B2F41 /* Debug */,
+                            1BD57EEA11584D1C8D03D8F2 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              12C87C7C8459492DB1CFEED9 /* Build configuration list for PBXAggregateTarget "install" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            1DE2DAA23E904AD2B265E465 /* Debug */,
+                            1C5062E065C0419BA73AB662 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              6D78DF5EA6874F76A4202B7F /* Build configuration list for PBXNativeTarget "opencv_calib3d" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            D43FF843CE4645E1A1915BD6 /* Debug */,
+                            6BC5514CF200404E8A85BC4B /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              FE856D4C83FC4D84913F7D1E /* Build configuration list for PBXAggregateTarget "package" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            409E92F431764135B10A7228 /* Debug */,
+                            14AC4D66B73E4FC0BA13FF56 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = 5CBD56B296624246945BED2E;
+}
