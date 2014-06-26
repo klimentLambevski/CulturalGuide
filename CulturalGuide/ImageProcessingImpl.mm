@@ -9,6 +9,7 @@
 
 #import "ImageProcessingImpl.h"
 #import "OpenCVImageProcessor.h"
+#import "RobustMatcher.h"
 
 
 @implementation ImageProcessingImpl
@@ -17,22 +18,56 @@
 
 //funkcii koj gi koristam jas a ne bea vo templejtov
 
-- (UIImage*) processImageSurf:(UIImage*) src 
+
+
+-(int) saveDescriptor:(UIImage*) src secondParametar:(NSString *) name pathforFile:(NSString *) path
 {
     OpenCVImageProcessor processor;
-    cv::Mat srcImage = [self cvMatFromUIImage:src];
-    UIImage *dest=[self UIImageFromCVMat:processor.processImage(srcImage)];
-    return dest;
-}
-- (UIImage*) detectObject:(UIImage*) src secondParametar:(UIImage*) scene
-{
-    OpenCVImageProcessor processor;
-    cv::Mat srcImage = [self cvMatFromUIImage:src];
-    cv::Mat sceneImage = [self cvMatFromUIImage:scene];
-    UIImage *dest=[self UIImageFromCVMat:processor.drawDetectedObject(srcImage, sceneImage)];
-    return dest;
+    path=[self documentsPathForFileName:path];
+    cv::Mat srcImage=[self cvMatFromUIImage:src];
+    return processor.saveImageDescriptor(srcImage,new std::string([name UTF8String]), new std::string([path UTF8String]));
+   
 }
 
+-(int) searchImageInfo:(UIImage *)src pathForFile:(NSString *) path arrayOfDescriptors:(NSArray *) descriptors
+{
+    int length=[descriptors count];
+    std::vector<std::string> desc;
+        for(int i=0;i<length;i++){
+        desc.push_back(*new std::string([[[descriptors objectAtIndex:i] objectForKey:@"name"] UTF8String]));
+        NSLog(@"%@",[[descriptors objectAtIndex:i] objectForKey:@"name"]);
+        std::cout<<desc[i]<<"\n";
+    }
+    OpenCVImageProcessor processor;
+    cv::Mat srcImage=[self cvMatFromUIImage:src];
+    path=[self documentsPathForFileName:path];
+    
+    return processor.getImageInfo(srcImage, new std::string([path UTF8String]), desc);
+}
+
+-(int) robustMatch:(UIImage*) src sceneImage:(UIImage*) scene
+{
+    RobustMatcher matcher;
+    std::vector<cv::DMatch> matches;
+    std::vector<cv::KeyPoint> keypoints1, keypoints2;
+    cv::Mat srcImage=[self cvMatFromUIImage:src];
+    cv::Mat sceneImage=[self cvMatFromUIImage:scene];
+    cv::Mat srcImagegray,sceneImageGray;
+    cv::cvtColor( srcImage,srcImagegray, cv::COLOR_BGR2GRAY);
+    cv::cvtColor( sceneImage,sceneImageGray, cv::COLOR_BGR2GRAY);
+    return matcher.match(srcImagegray,sceneImageGray,matches,keypoints1,keypoints2);
+    
+}
+
+
+
+- (NSString *)documentsPathForFileName:(NSString *)name
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
+    NSString *documentsPath = [paths objectAtIndex:0];
+    
+    return [documentsPath stringByAppendingPathComponent:name];
+}
 /*
  * Convert ui image to cv::Mat
  */

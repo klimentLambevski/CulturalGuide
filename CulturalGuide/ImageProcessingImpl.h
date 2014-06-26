@@ -12,6 +12,9 @@
 #import "ImageProcessingProtocol.h"
 
 @interface ImageProcessingImpl : NSObject<ImageProcessingProtocol>
-- (UIImage*) detectObject:(UIImage*) src secondParametar:(UIImage*) scene;
 - (UIImage*) processImageSurf:(UIImage*) src;
+- (NSString *)documentsPathForFileName:(NSString *)name;
+-(int) saveDescriptor:(UIImage*) src secondParametar:(NSString *) name pathforFile:(NSString *) path;
+-(int) searchImageInfo:(UIImage *)src pathForFile:(NSString *) path arrayOfDescriptors:(NSArray *) descriptors;
+-(int) robustMatch:(UIImage*) src sceneImage:(UIImage*) scene;
 @end
