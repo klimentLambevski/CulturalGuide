@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface klcDescriptorViewController : UIViewController
+@interface klcDescriptorViewController : UIViewController<UINavigationControllerDelegate,UIImagePickerControllerDelegate,UIPopoverControllerDelegate>
+{
+    UIButton *mainButton;
+    UIPopoverController *popoverController;
+}
+@property (weak, nonatomic) IBOutlet UITextView *ImageInfo;
+@property (weak, nonatomic) IBOutlet UITextField *ImageName;
+@property (nonatomic, retain) UIPopoverController *popoverController;
+- (IBAction)syncWithServer:(id)sender;
 
 @end

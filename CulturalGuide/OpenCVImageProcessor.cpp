@@ -98,28 +98,45 @@ Mat OpenCVImageProcessor::drawDetectedObject(Mat srcImage,Mat sceneImage){
     return sceneImage;
 }
 
-int OpenCVImageProcessor::saveImageDescriptor(Mat srcImage,std::string *name,std::string *path){
-    FileStorage fs(*path,FileStorage::APPEND);
+int OpenCVImageProcessor::saveImageDescriptor(Mat srcImage,std::string *name,std::string *path,int firstItem){
+    Size size(320,220);
+   
     int minHessian = 400;
-    Mat src_image,object_descriptor;
-    cvtColor( srcImage,src_image, cv::COLOR_BGR2GRAY);
+    Mat src_image,object_descriptor,resizedImage;
+    resize(srcImage, resizedImage, size);
+    cvtColor( resizedImage,src_image, cv::COLOR_BGR2GRAY);
     SurfFeatureDetector detector( minHessian );
     std::vector<KeyPoint> keypoints_object, keypoints_scene;
     
     detector.detect( src_image, keypoints_object );
     SurfDescriptorExtractor extractor;
     extractor.compute( src_image, keypoints_object, object_descriptor );
-    write(fs,*name,object_descriptor);
-    name->append("_keypoints");
-    write(fs,*name,keypoints_object);
-    fs.release();
+    if(firstItem){
+        FileStorage fs(*path,FileStorage::APPEND);
+        write(fs,*name,object_descriptor);
+        name->append("_keypoints");
+        write(fs,*name,keypoints_object);
+         fs.release();
+    }
+    else {
+        FileStorage fs(*path,FileStorage::WRITE);
+        write(fs,*name,object_descriptor);
+        name->append("_keypoints");
+        write(fs,*name,keypoints_object);
+         fs.release();
+    }
+    
+   
     return 1;
 }
 int OpenCVImageProcessor::getImageInfo(Mat srcImage, std::string *path, std::vector<std::string> desc){
+    
     FileStorage fs(*path,FileStorage::READ);
     int minHessian = 400;
-    Mat src_image,object_descriptor,scene_descriptor;
-    cvtColor( srcImage,src_image, cv::COLOR_BGR2GRAY);
+    Mat src_image,object_descriptor,scene_descriptor,resizedImage;
+    Size size(320,220);
+    resize(srcImage, resizedImage, size);
+    cvtColor( resizedImage,src_image, cv::COLOR_BGR2GRAY);
     SurfFeatureDetector detector( minHessian );
     std::vector<KeyPoint> keypoints_object, keypoints_scene;
     
@@ -127,6 +144,7 @@ int OpenCVImageProcessor::getImageInfo(Mat srcImage, std::string *path, std::vec
     SurfDescriptorExtractor extractor;
     extractor.compute( src_image, keypoints_object, object_descriptor );
     std::vector<cv::DMatch> matches;
+    printf("se desi %d; %d %d\n",src_image.cols,src_image.rows,desc.size());
     for(int i=0;i<desc.size();i++){
         FileNode descriptor=fs[desc[i]];
         std::string keypoints=desc[i];

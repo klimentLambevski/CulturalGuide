@@ -20,17 +20,18 @@
 
 
 
--(int) saveDescriptor:(UIImage*) src secondParametar:(NSString *) name pathforFile:(NSString *) path
+-(int) saveDescriptor:(UIImage*) src secondParametar:(NSString *) name pathforFile:(NSString *) path isFirstItem:(int) firstItem
 {
     OpenCVImageProcessor processor;
-    path=[self documentsPathForFileName:path];
+    
     cv::Mat srcImage=[self cvMatFromUIImage:src];
-    return processor.saveImageDescriptor(srcImage,new std::string([name UTF8String]), new std::string([path UTF8String]));
+    return processor.saveImageDescriptor(srcImage,new std::string([name UTF8String]), new std::string([path UTF8String]),firstItem);
    
 }
 
 -(int) searchImageInfo:(UIImage *)src pathForFile:(NSString *) path arrayOfDescriptors:(NSArray *) descriptors
 {
+    printf("stignato to search image info\n");
     int length=[descriptors count];
     std::vector<std::string> desc;
         for(int i=0;i<length;i++){
@@ -40,7 +41,7 @@
     }
     OpenCVImageProcessor processor;
     cv::Mat srcImage=[self cvMatFromUIImage:src];
-    path=[self documentsPathForFileName:path];
+    
     
     return processor.getImageInfo(srcImage, new std::string([path UTF8String]), desc);
 }

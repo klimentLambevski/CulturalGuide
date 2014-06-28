@@ -29,7 +29,7 @@ public:
   
  
   cv::Mat drawDetectedObject(cv::Mat srcImage,cv::Mat sceneImage);
-    int saveImageDescriptor(cv::Mat srcImage,std::string *name,std::string *path);
+    int saveImageDescriptor(cv::Mat srcImage,std::string *name,std::string *path,int firstItem);
     int getImageInfo(cv::Mat srcImage, std::string *path, std::vector<std::string> desc);
 private:
 

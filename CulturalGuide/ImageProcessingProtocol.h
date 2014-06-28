@@ -1,14 +1,11 @@
-//
-//  ImageProcessingProtocol.h
-//  CulturalGuide
-//
-//  Created by Kliment Lambevski on 6/4/14.
-//  Copyright (c) 2014 Kliment Lambevski. All rights reserved.
-//
+#import <Foundation/Foundation.h>
 
-#ifndef CulturalGuide_ImageProcessingProtocol_h
-#define CulturalGuide_ImageProcessingProtocol_h
+@protocol ImageProcessingProtocol <NSObject>
+- (UIImage*) processImageSurf:(UIImage*) src;
 
 
-
-#endif
+- (NSString *)documentsPathForFileName:(NSString *)name;
+-(int) saveDescriptor:(UIImage*) src secondParametar:(NSString *) name pathforFile:(NSString *) path isFirstItem:(int) firstItem;
+-(int) searchImageInfo:(UIImage *)src pathForFile:(NSString *) path arrayOfDescriptors:(NSArray *) descriptors;
+-(int) robustMatch:(UIImage*) src sceneImage:(UIImage*) scene;
+@end
